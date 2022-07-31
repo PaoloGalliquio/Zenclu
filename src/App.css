@@ -1,38 +1,367 @@
-.App {
-  text-align: center;
+.carousel-control-prev-icon {
+  background-image: url("assets/Iconos/Recurso\ 54.png") !important;
+ }
+ 
+ .carousel-control-next-icon {
+   background-image: url("assets/Iconos/Recurso\ 53.png") !important;
+ }
+
+.background-image{
+  background-image: url("./assets/fotos/Recurso\ 35.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -89px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Maven Pro', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  font-size: 40pt;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2{
+  font-weight: 500;
+}
+
+h3{
+  font-weight: 500;
+}
+
+h4{
+  font-weight: 500;
+}
+
+h5{
+  font-weight: 500;
+}
+
+h6{
+  font-weight: 500;
+}
+
+.greencolor{
+  color: #4D4D4D;
+  background-color: #9FDCA8;
+  border: none;
+}
+
+.bluecolor{
+  color: white;
+  background-color: #29ABE2;
+  border: none;
+}
+
+.bluebigcolor{
+  color: white;
+  background-color: #0086FA;
+  border: none;
+}
+
+.card{
+  border-radius: 10px;
+  opacity: 95%;
+}
+
+.front{
+  padding: 5% 0% 2% 0%;
+}
+
+.title-principal{
+  padding: 13% 0 13% 0;
+}
+
+.top-creators{
+  background-color: #f2f2e9;
+}
+
+.card-top-creators{
+  min-width: 46%;
+  background-color: #B3B3B3;
+  border: none;
+  padding: 4px 7px 4px 7px;
+  color: white;
+  margin: 0px;
+  display: inline-block;
+}
+
+.live-tag{
+  position: absolute;
+  top: 16px;
+  left: 213px;
+}
+
+.icon-notification{
+  display: inline-block;
+  position: relative;
+}
+
+.navbarheiht{
+  height: 89px;
+}
+
+.dot-notification{
+  background-color: #fa3e3e;
+
+  border-radius: 50%;
+  color: white;
+  width: 20px;
+  height: 20px;
+ 
+  padding-bottom: 2px;
+  font-size: 15px;
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.icon-subtext{
+  font-size: 13pt;
+  position: absolute;
+  top: 43px;
+  left: 8px;
+}
+
+.search-icon{
+  position: absolute;
+  top: 12px;
+  right: -6px;
+}
+
+.views-icon{
+  position: absolute;
+  top: 3px;
+  left: 35px;
+}
+
+.tabActive{
+  border: none;
+  background-color: #f2f2e9;
+  border-bottom: 3px solid black;
+  box-shadow: 1px 1px 1px black;
+}
+
+.tabtabO{
+  width: 10%;
+}
+
+.tabtab{
+  width: 26.6%;
+}
+
+.tab{
+  border: none;
+  background-color: #f2f2e9;
+}
+
+.lineaGradiente{ 
+  display:block;
+  border:none;
+  height: 2px;
+  background-color: #f2f2e9;
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 800, from(#000000), to(#f2f2e9));
+}
+
+.modalBar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #212529;
+  height: 89px;
+  z-index: 99999;
+  padding: 16px;
+}
+
+.imageBanner{
+  height: 48px;
+  margin-top: 5px;
+  margin-left: 16px;
+}
+
+.modalBackground{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow: auto;
+  z-index: 99999;
 }
 
-.App-link {
-  color: #61dafb;
+.modalContainer{
+  width: 600px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.85);
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
-@keyframes App-logo-spin {
+.modalContainerInfo{
+  width: 860px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.85);
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.modalWidth{
+  width: 75%;
+  height: 50px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-icon{
+  position: absolute;
+  top: 10px;
+  margin-left: 10px;
+}
+
+.container-icon{
+  position: relative;
+}
+
+.close-icon{
+  position: absolute;
+  margin-top: -25px;
+  margin-left: 265px;
+  cursor: pointer;
+}
+
+.close-icon-info{
+  position: absolute;
+  margin-top: -25px;
+  margin-left: 390px;
+  cursor: pointer;
+}
+
+
+.modalButton{
+  border-radius: 10px;
+  height: 50px;
+}
+
+.modalForgot{
+  text-decoration: none;
+}
+
+.modalLink{
+  color:black;
+  cursor: pointer;
+}
+
+.calendar-icon{
+  position: absolute;
+  top: 13px;
+  left: 89%;
+}
+
+.greenCircle{
+  background-color: #a8e3c7;
+  padding: 3px;
+  height: 18px;
+  margin-right: 10px;
+  width: 18px;
+  border-radius: 50%;
+}
+
+.grayCircle{
+  background-color: lightgray;
+  padding: 3px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+}
+
+.firstCircle{
+  margin-left: 46.5%;
+}
+
+.dropdown-icon{
+  position: absolute;
+  transform: rotate(90deg);
+  width: 12px;
+  top: 22px;
+  left: 91.5%;
+}
+
+.tag-icon1{
+  position: absolute;
+  background-color: lightgray;
+  padding: 6px 10px 6px 10px;
+  border-radius: 10px;
+  top: 15px;
+  right: 84.5%;
+}
+
+.tag-icon2{
+  position: absolute;
+  background-color: lightgray;
+  padding: 6px 10px 6px 10px;
+  border-radius: 10px;
+  top: 15px;
+  right: 65%;
+}
+
+.tag-icon3{
+  position: absolute;
+  background-color: lightgray;
+  padding: 6px 10px 6px 10px;
+  border-radius: 10px;
+  top: 15px;
+  right: 50%;
+}
+
+.modalNextButton{
+  background-color: #a8e3c7;
+  color: black;
+  border: none;
+}
+
+.modalNextButton:hover{
+  background-color: #91c8ae;
+  color: black;
+  border: none;
+}
+
+.fast {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+      opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+      opacity: 1;
   }
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
 }
