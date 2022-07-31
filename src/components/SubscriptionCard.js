@@ -1,5 +1,5 @@
 import { Card, Button } from "react-bootstrap";
-import viewsIcon from "../assets/Iconos/Recurso\ 52.png"
+import viewsIcon from "../assets/Iconos/Recurso 52.png"
 
 const typeInfo = (type) => {
   if( type == "Video"){

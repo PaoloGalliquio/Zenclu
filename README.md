@@ -2,7 +2,7 @@
 
 ## `Run proyect:`
 
-### npm run
+### npm start
 
 ## `Install node_modules:`
 

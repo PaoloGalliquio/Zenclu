@@ -10,7 +10,7 @@ const NavbarZ = () => {
       <Navbar bg="dark" variant="dark" className="p-3 navbarheiht">
           <Navbar.Brand href="#home">
             <img
-              src={require("../assets/Iconos/Recurso\ 32.png")}
+              src={require("../assets/Iconos/Recurso 32.png")}
               height="48"
               className="d-inline-block align-top ms-3"
             />
@@ -28,7 +28,7 @@ const NavbarZ = () => {
                   />
                 </Form>
                 <img
-                  src={require("../assets/Iconos/Recurso\ 41.png")}
+                  src={require("../assets/Iconos/Recurso 41.png")}
                   height="22"
                   className="search-icon"
                 />
@@ -38,7 +38,7 @@ const NavbarZ = () => {
               <Nav.Link href="#">
                 <div className="icon-notification">
                   <img
-                    src={require("../assets/Iconos/Recurso\ 36.png")}
+                    src={require("../assets/Iconos/Recurso 36.png")}
                     width={iconSize}
                     height={iconSize}
                     className="d-inline-block align-top ms-1 mf-1"
@@ -48,7 +48,7 @@ const NavbarZ = () => {
               </Nav.Link>
               <Nav.Link href="#">
                 <img
-                  src={require("../assets/Iconos/Recurso\ 37.png")}
+                  src={require("../assets/Iconos/Recurso 37.png")}
                   width={iconSize}
                   height={iconSize}
                   className="d-inline-block align-top ms-1 mf-1"
@@ -56,7 +56,7 @@ const NavbarZ = () => {
               </Nav.Link>
               <Nav.Link href="#">
                 <img
-                  src={require("../assets/Iconos/Recurso\ 38.png")}
+                  src={require("../assets/Iconos/Recurso 38.png")}
                   width={iconSize}
                   height={iconSize}
                   className="d-inline-block align-top ms-1 mf-1"
@@ -66,7 +66,7 @@ const NavbarZ = () => {
                 <div className="icon-notification">
                   <h4 className="text-center icon-subtext">200</h4>
                   <img
-                    src={require("../assets/Iconos/Recurso\ 40.png")}
+                    src={require("../assets/Iconos/Recurso 40.png")}
                     width={iconSize}
                     height={iconSize}
                     className="d-inline-block align-top ms-1 mf-1"
@@ -76,7 +76,7 @@ const NavbarZ = () => {
               <Nav.Link href="#">
                 <div className="icon-notification">
                   <img
-                    src={require("../assets/Iconos/Recurso\ 39.png")}
+                    src={require("../assets/Iconos/Recurso 39.png")}
                     width={bigIconSize}
                     height={bigIconSize}
                     className="d-inline-block align-top ms-1 mf-1"

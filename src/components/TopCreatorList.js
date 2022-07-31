@@ -1,8 +1,8 @@
 import TopCreatorCard from "./TopCreatorCard";
-import image1 from "../assets/fotos/Recurso\ 46.png"
-import image2 from "../assets/fotos/Recurso\ 45.png"
-import image3 from "../assets/fotos/Recurso\ 44.png"
-import image4 from "../assets/fotos/Recurso\ 43.png"
+import image1 from "../assets/fotos/Recurso 46.png"
+import image2 from "../assets/fotos/Recurso 45.png"
+import image3 from "../assets/fotos/Recurso 44.png"
+import image4 from "../assets/fotos/Recurso 43.png"
 
 const getCards = () => {
   const cardInfo = [

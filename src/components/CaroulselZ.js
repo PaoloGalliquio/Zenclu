@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Carousel, Card, Button } from "react-bootstrap";
 import TrendCard from "./TrendCard";
-import image1 from "../assets/fotos/Recurso\ 50.png";
-import image2 from "../assets/fotos/Recurso\ 49.png";
-import image3 from "../assets/fotos/Recurso\ 48.png";
-import image4 from "../assets/fotos/Recurso\ 47.png";
+import image1 from "../assets/fotos/Recurso 50.png";
+import image2 from "../assets/fotos/Recurso 49.png";
+import image3 from "../assets/fotos/Recurso 48.png";
+import image4 from "../assets/fotos/Recurso 47.png";
 
 const getCards = () => {
   const cardInfo = [

@@ -1,8 +1,8 @@
 import SubscriptionCard from "./SubscriptionCard";
-import image1 from "../assets/fotos/Recurso\ 42.png"
-import image2 from "../assets/fotos/Recurso\ 11.png"
-import image3 from "../assets/fotos/Recurso\ 12.png"
-import image4 from "../assets/fotos/Recurso\ 11.png"
+import image1 from "../assets/fotos/Recurso 42.png"
+import image2 from "../assets/fotos/Recurso 11.png"
+import image3 from "../assets/fotos/Recurso 12.png"
+import image4 from "../assets/fotos/Recurso 11.png"
 
 const getCards = () => {
   const cardInfo = [

@@ -1,8 +1,8 @@
 import { Button, Form } from "react-bootstrap";
-import FacebookIcon from "../assets/Iconos/Recurso\ 30.png";
-import GoogleIcon from "../assets/Iconos/Recurso\ 31.png";
+import FacebookIcon from "../assets/Iconos/Recurso 30.png";
+import GoogleIcon from "../assets/Iconos/Recurso 31.png";
 import CloseIcon from "../assets/Iconos/close.png";
-import Logo from "../assets/Iconos/Recurso\ 32.png";
+import Logo from "../assets/Iconos/Recurso 32.png";
 
 const Ingresar = (props) => {
     document.getElementById('app-root').style.filter = 'blur(10px)'
