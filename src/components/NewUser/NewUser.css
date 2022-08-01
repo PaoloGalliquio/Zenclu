@@ -1,0 +1,29 @@
+.newuser-opacity{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(33, 37, 41, 0.8);
+  height: 89px;
+  z-index: 99999;
+  padding: 16px;
+}
+
+.newuser-background{
+  background-image: url("../../assets/fotos/Recurso\ 35.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.newuser-title{
+  font-size: 30pt;
+  margin-top: 80%;
+}
+
+.newuse-mb{
+  margin-bottom: 80%;
+}
+
+.newuser-greenbg{
+  background-color: rgb(159, 220, 168, 0.5);
+}

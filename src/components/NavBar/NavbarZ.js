@@ -14,7 +14,7 @@ const NavbarZ = () => {
   return (
     <>
       <Navbar bg="dark" variant="dark" className="p-3 navbarheiht w-100 m-0">
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <img
               src={image1}
               height="48"
@@ -68,7 +68,7 @@ const NavbarZ = () => {
                   className="d-inline-block align-top ms-1 mf-1"
                 />
               </Nav.Link>
-              <Nav.Link href="#">
+              <Nav.Link href="/Zwallet">
                 <div className="icon-notification">
                   <h4 className="text-center icon-subtext">200</h4>
                   <img

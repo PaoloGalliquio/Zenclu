@@ -15,6 +15,9 @@
 
 body{
   font-family: 'Maven Pro', sans-serif;
+  position: relative;
+  padding-bottom: 210px;
+  min-height: 100vh;
 }
 
 h1{
@@ -98,13 +101,6 @@ h6{
   left: 35px;
 }
 
-.tabActive{
-  border: none;
-  background-color: #f2f2e9;
-  border-bottom: 3px solid black;
-  box-shadow: 1px 1px 1px black;
-}
-
 .tabtabO{
   width: 10%;
 }
@@ -116,14 +112,6 @@ h6{
 .tab{
   border: none;
   background-color: #f2f2e9;
-}
-
-.lineaGradiente{ 
-  display:block;
-  border:none;
-  height: 2px;
-  background-color: #f2f2e9;
-  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 800, from(#000000), to(#f2f2e9));
 }
 
 .modalBar{

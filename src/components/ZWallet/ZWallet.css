@@ -1,0 +1,30 @@
+.wallet-section1{
+  padding-left: 10%;
+  margin-top: 40px;
+}
+
+.wallet-section1 h2{
+  display: inline;
+}
+
+.wallet-section2{
+  padding-left: 35%;
+  padding-right: 35%;
+}
+
+.wallet-section3{
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-bottom: auto;
+}
+
+.wallet-total{
+  color: #8a8a8a;
+}
+
+.wallet-icon{
+  width: auto;
+  padding: 0;
+}
