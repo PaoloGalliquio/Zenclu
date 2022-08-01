@@ -1,7 +1,7 @@
 import { Button, Form } from "react-bootstrap";
-import calendarIcon from "../assets/Iconos/Recurso 33.png";
-import CloseIcon from "../assets/Iconos/close.png";
-import Logo from "../assets/Iconos/Recurso 32.png";
+import calendarIcon from "../../assets/Iconos/Recurso 33.png";
+import CloseIcon from "../../assets/Iconos/close.png";
+import Logo from "../../assets/Iconos/Recurso 32.png";
 
 const Informacion1 = (props) => {
     document.getElementById('app-root').style.filter = 'blur(10px)'

@@ -1,8 +1,8 @@
 import TopCreatorCard from "./TopCreatorCard";
-import image1 from "../assets/fotos/Recurso 46.png"
-import image2 from "../assets/fotos/Recurso 45.png"
-import image3 from "../assets/fotos/Recurso 44.png"
-import image4 from "../assets/fotos/Recurso 43.png"
+import image1 from "../../assets/fotos/Recurso 46.png"
+import image2 from "../../assets/fotos/Recurso 45.png"
+import image3 from "../../assets/fotos/Recurso 44.png"
+import image4 from "../../assets/fotos/Recurso 43.png"
 
 const getCards = () => {
   const cardInfo = [
@@ -27,9 +27,9 @@ const getCards = () => {
 
 const TopCreatorList = () => {
   return (
-    <div className="row top-creators">
+    <div className="row top-creators w-100 m-0">
       <div className="col-md-1 my-auto text-end">
-        <img src={require("../assets/Iconos/Recurso 54.png")} />
+        <img src={require("../../assets/Iconos/Recurso 54.png")} />
       </div>
       <div className="col-md-10">
         <div className="row text-black trending mx-auto">
@@ -59,7 +59,7 @@ const TopCreatorList = () => {
         </div>
       </div>
       <div className="col-md-1 my-auto">
-        <img src={require("../assets/Iconos/Recurso 53.png")} />
+        <img src={require("../../assets/Iconos/Recurso 53.png")} />
       </div>
     </div>
   );

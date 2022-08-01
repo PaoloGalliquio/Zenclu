@@ -1,14 +1,15 @@
 import './App.css';
 import { useState } from 'react';
 import NavbarZ from "./components/NavbarZ";
-import SubscriptionList from "./components/SubscriptionList";
-import TrendList from "./components/TrendList";
-import TopCreatorList from "./components/TopCreatorList";
-import Registrarse from './components/Registrarse';
+import SubscriptionList from "./components/Subscriptions/SubscriptionList";
+import TrendList from "./components/Trends/TrendList";
+import TopCreatorList from "./components/TopCreators/TopCreatorList";
+import Registrarse from './components/Register/Registrarse';
 import Ingresar from './components/Ingresar';
-import Informacion1 from './components/Informacion1';
-import Informacion2 from './components/Informacion2';
+import Informacion1 from './components/Register/Informacion1';
+import Informacion2 from './components/Register/Informacion2';
 import CarouselZ from './components/CaroulselZ';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [showRegister, setShowRegister] = useState(false);
@@ -27,6 +28,7 @@ function App() {
         {/* <CarouselZ/> */}
         <TrendList/>
         <TopCreatorList/>
+        <Footer/>
       </div>
       {/* Modals */}
       <div id="modal-root">

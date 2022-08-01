@@ -1,7 +1,7 @@
 import { Button, Form } from "react-bootstrap";
-import CloseIcon from "../assets/Iconos/close.png";
-import DropdownIcon from "../assets/Iconos/Recurso 53.png";
-import Logo from "../assets/Iconos/Recurso 32.png";
+import CloseIcon from "../../assets/Iconos/close.png";
+import DropdownIcon from "../../assets/Iconos/Recurso 53.png";
+import Logo from "../../assets/Iconos/Recurso 32.png";
 
 const Informacion2 = (props) => {
     document.getElementById('app-root').style.filter = 'blur(10px)'

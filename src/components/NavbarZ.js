@@ -7,7 +7,7 @@ const NavbarZ = () => {
   const bigIconSize = "60";
   return (
     <>
-      <Navbar bg="dark" variant="dark" className="p-3 navbarheiht">
+      <Navbar bg="dark" variant="dark" className="p-3 navbarheiht w-100 m-0">
           <Navbar.Brand href="#home">
             <img
               src={require("../assets/Iconos/Recurso 32.png")}

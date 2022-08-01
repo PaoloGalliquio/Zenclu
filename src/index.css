@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  width: 100%;
+  height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +12,25 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.zencluInput{
+  border: 0px;
+  border-radius: 15px;
+  height: 45px;
+  padding-left: 15px;
+}
+
+.zencluBold{
+  font-weight: 700;
+}
+
+.zencluButton{
+  border: 0px;
+  background: none;
+  font-size: 18px;
+}
+
+.zencluPointer{
+  cursor: pointer;
 }
