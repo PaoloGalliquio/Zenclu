@@ -1,6 +1,12 @@
+import "./NavbarZ.css"
 import { Navbar, Nav, Container, FormControl, Form, Button } from "react-bootstrap";
-import "../App.css"
-
+import image1 from "../../assets/Iconos/Recurso 32.png";
+import image2 from "../../assets/Iconos/Recurso 41.png";
+import image3 from "../../assets/Iconos/Recurso 36.png";
+import image4 from "../../assets/Iconos/Recurso 37.png";
+import image5 from "../../assets/Iconos/Recurso 38.png";
+import image6 from "../../assets/Iconos/Recurso 40.png";
+import image7 from "../../assets/Iconos/Recurso 39.png";
 
 const NavbarZ = () => {
   const iconSize = "40";
@@ -10,7 +16,7 @@ const NavbarZ = () => {
       <Navbar bg="dark" variant="dark" className="p-3 navbarheiht w-100 m-0">
           <Navbar.Brand href="#home">
             <img
-              src={require("../assets/Iconos/Recurso 32.png")}
+              src={image1}
               height="48"
               className="d-inline-block align-top ms-3"
             />
@@ -28,7 +34,7 @@ const NavbarZ = () => {
                   />
                 </Form>
                 <img
-                  src={require("../assets/Iconos/Recurso 41.png")}
+                  src={image2}
                   height="22"
                   className="search-icon"
                 />
@@ -38,17 +44,17 @@ const NavbarZ = () => {
               <Nav.Link href="#">
                 <div className="icon-notification">
                   <img
-                    src={require("../assets/Iconos/Recurso 36.png")}
+                    src={image3}
                     width={iconSize}
                     height={iconSize}
                     className="d-inline-block align-top ms-1 mf-1"
                   />
-                  <h6 className="dot-notification text-center">1</h6>
+                  <h6 className="dot-notification">1</h6>
                 </div>
               </Nav.Link>
               <Nav.Link href="#">
                 <img
-                  src={require("../assets/Iconos/Recurso 37.png")}
+                  src={image4}
                   width={iconSize}
                   height={iconSize}
                   className="d-inline-block align-top ms-1 mf-1"
@@ -56,7 +62,7 @@ const NavbarZ = () => {
               </Nav.Link>
               <Nav.Link href="#">
                 <img
-                  src={require("../assets/Iconos/Recurso 38.png")}
+                  src={image5}
                   width={iconSize}
                   height={iconSize}
                   className="d-inline-block align-top ms-1 mf-1"
@@ -66,7 +72,7 @@ const NavbarZ = () => {
                 <div className="icon-notification">
                   <h4 className="text-center icon-subtext">200</h4>
                   <img
-                    src={require("../assets/Iconos/Recurso 40.png")}
+                    src={image6}
                     width={iconSize}
                     height={iconSize}
                     className="d-inline-block align-top ms-1 mf-1"
@@ -76,12 +82,12 @@ const NavbarZ = () => {
               <Nav.Link href="#">
                 <div className="icon-notification">
                   <img
-                    src={require("../assets/Iconos/Recurso 39.png")}
+                    src={image7}
                     width={bigIconSize}
                     height={bigIconSize}
                     className="d-inline-block align-top ms-1 mf-1"
                   />
-                  <h6 className="dot-notification text-center">1</h6>
+                  <h6 className="dot-notification">1</h6>
                 </div>
               </Nav.Link>
             </Nav>

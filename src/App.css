@@ -92,44 +92,6 @@ h6{
   left: 213px;
 }
 
-.icon-notification{
-  display: inline-block;
-  position: relative;
-}
-
-.navbarheiht{
-  height: 89px;
-}
-
-.dot-notification{
-  background-color: #fa3e3e;
-
-  border-radius: 50%;
-  color: white;
-  width: 20px;
-  height: 20px;
- 
-  padding-bottom: 2px;
-  font-size: 15px;
-  
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.icon-subtext{
-  font-size: 13pt;
-  position: absolute;
-  top: 43px;
-  left: 8px;
-}
-
-.search-icon{
-  position: absolute;
-  top: 12px;
-  right: -6px;
-}
-
 .views-icon{
   position: absolute;
   top: 3px;
