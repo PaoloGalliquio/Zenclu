@@ -1,22 +1,11 @@
-.newuser-opacity{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgb(33, 37, 41, 0.8);
-  height: 89px;
-  z-index: 99999;
-  padding: 16px;
-}
-
 .newuser-background{
-  background-image: url("../../assets/fotos/Recurso\ 35.png");
+  background-image: url("../../assets/fotos/Recurso\ 1.png");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
 .newuser-title{
-  font-size: 30pt;
+  font-size: 40pt;
   margin-top: 80%;
 }
 
@@ -25,5 +14,45 @@
 }
 
 .newuser-greenbg{
-  background-color: rgb(159, 220, 168, 0.5);
+  background-color: rgb(159, 220, 168, 0.7);
+}
+
+.newuser-beneficios{
+  margin-top: 25%;
+  margin-bottom: 4%;
+
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.newuser-videos{
+  background-color: #7b7a80;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.newuser-title-videos{
+  color: white;
+}
+
+.newuser-rowImage{
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.newuser-esperar{
+  margin-top: 4%;
+  margin-bottom: 4%;
+
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.newuser-title-esperar{
+  margin-bottom: 4%;
+}
+
+.newuser-select{
+  width: 20%;
+  height: 60px;
 }

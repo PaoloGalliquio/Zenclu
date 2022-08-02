@@ -28,7 +28,7 @@ const NavbarZ = () => {
                   <FormControl
                     type="search"
                     placeholder="Buscar"
-                    className="ms-3 me-5 p-2 pe-5"
+                    className="ms-3 me-5 p-2 pe-5 navbar-search"
                     aria-label="Search"
                     size="lg"
                   />

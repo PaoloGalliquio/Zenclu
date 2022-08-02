@@ -15,7 +15,7 @@ const typeInfo = (type) => {
 
 export default function SubscriptionCard ( props ) {
   return (
-    <Card className="m-2 col-md-3 mx-auto" style={{ width: "20rem"}}>
+    <Card className="m-2 col-md-3 mx-auto zencluShadow" style={{ width: "20rem"}}>
       <Card.Img className="mt-2" variant="top" src={props.image}/>
       <Card.Body className="pt-3 pe-0 ps-0 pb-3">
         <h5><b>{props.title}</b></h5>

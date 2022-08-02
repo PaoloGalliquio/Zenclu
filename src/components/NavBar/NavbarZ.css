@@ -14,3 +14,8 @@
   top: 43px;
   left: 8px;
 }
+
+.navbar-search{
+  border-radius: 15px;
+  padding-left: 15px;
+}

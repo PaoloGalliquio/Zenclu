@@ -13,20 +13,22 @@ code {
   border-radius: 15px;
   background-color: #0d6efd;
   border: none;
-  height: 45px;
+  height: 55px;
   color: white;
+  font-size: large;
   font-weight: bold;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .buttonSecondary{
   border-radius: 15px;
   background-color: #ffffff;
   border: none;
-  height: 45px;
+  height: 55px;
   color: black;
+  font-size: large;
   font-weight: bold;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .buttonSecondary:hover{
@@ -41,6 +43,15 @@ code {
   border-radius: 15px;
   height: 45px;
   padding-left: 15px;
+}
+
+.zencluSelect{
+  border: 0px;
+  border-radius: 15px;
+  font-size: large;
+  height: 55px;
+  padding-left: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .zencluBold{
@@ -126,4 +137,8 @@ code {
 
 .tabNotActive{
   color: #9d9d9d;
+}
+
+.zencluShadow{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
