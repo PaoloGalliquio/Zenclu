@@ -1,7 +1,1 @@
-@ECHO OFF
-
-git add .
-git commit -m "actualization"
-git push
-
-exit
+(git add . ) , (git commit -m "a") , (git push)
