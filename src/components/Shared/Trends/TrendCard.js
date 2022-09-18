@@ -1,5 +1,5 @@
 import { Card, Button } from "react-bootstrap";
-import liveIcon from "../../assets/Iconos/Recurso 51.png";
+import liveIcon from "../../../assets/Iconos/Recurso 51.png";
 
 const typeInfo = (type) => {
   if( type == "Video"){
@@ -21,7 +21,7 @@ const isLiveIcon = (isLive) => {
 
 export default function TrendCard ( props ) {
   return (
-    <Card className="m-2 col-md-3 mx-auto" style={{ width: "20rem"}}>
+    <Card className="ps-2 pe-2 pt-0 border-0 zencluShadow">
       <Card.Img className="mt-2" variant="top" src={props.image} />
       {isLiveIcon(props.isLive)}
       <Card.Body className="pt-3 pe-0 ps-0 pb-3">

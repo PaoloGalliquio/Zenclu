@@ -59,7 +59,7 @@ const Ingresar = (props) => {
           </a>
           <div className="text-center mb-3">
             <Button variant="primary" className="text-center w-50 modalButton"
-              onClick={() => window.location.href = "/Zenclu"}  
+              onClick={() => window.location.href = "/Home"}  
             >
               Iniciar sesión
             </Button>

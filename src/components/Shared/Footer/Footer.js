@@ -1,8 +1,8 @@
 import './Footer.css';
-import GrayFacebook from '../../assets/Iconos/Gray-Facebook.png'
-import GrayLinkedin from '../../assets/Iconos/Gray-Linkedin.png'
-import GrayInstagram from '../../assets/Iconos/Gray-Instagram.png'
-import GrayZenclu from '../../assets/Iconos/Gray.Zenclu-Logo.png'
+import GrayFacebook from '../../../assets/Iconos/Gray-Facebook.png'
+import GrayLinkedin from '../../../assets/Iconos/Gray-Linkedin.png'
+import GrayInstagram from '../../../assets/Iconos/Gray-Instagram.png'
+import GrayZenclu from '../../../assets/Iconos/Gray.Zenclu-Logo.png'
 
 const Footer = () => {
   return(

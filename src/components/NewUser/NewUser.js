@@ -5,8 +5,8 @@ import Registrarse from '../Register/Registrarse';
 import Ingresar from '../Login/Ingresar';
 import Informacion1 from '../Register/Informacion1';
 import Informacion2 from '../Register/Informacion2';
-import Footer from '../Footer/Footer';
-import Header from "../Header/Header";
+import Footer from '../Shared/Footer/Footer';
+import Header from "../Shared/Header/Header";
 import image1 from '../../assets/Iconos/Recurso 10.png';
 import image2 from '../../assets/Iconos/Recurso 9.png';
 import image3 from '../../assets/Iconos/Recurso 8.png';
@@ -20,7 +20,7 @@ import image10 from "../../assets/Iconos/Recurso 22.png";
 import image11 from "../../assets/Iconos/Recurso 23.png";
 import rowImageL from '../../assets/Iconos/Recurso 54.png';
 import rowImageR from '../../assets/Iconos/Recurso 53.png';
-import SubscriptionCard from '../Subscriptions/SubscriptionCard';
+import SubscriptionCard from '../Shared/Subscriptions/SubscriptionCard';
 
 const getCards = () => {
   const cardInfo = [
@@ -33,14 +33,18 @@ const getCards = () => {
   return(
     <div className="row mx-auto">
       {cardInfo.map((info) => {
-        return <SubscriptionCard
-          key = {info.id}
-          image = {info.image}
-          title = {info.title}
-          author = {info.author}
-          views = {info.views}
-          type = {info.type}
-        />;
+        return (
+        <div className="col">
+          <SubscriptionCard
+            key = {info.id}
+            image = {info.image}
+            title = {info.title}
+            author = {info.author}
+            views = {info.views}
+            type = {info.type}
+          />
+        </div>
+        );
       })}
     </div>
   );
@@ -156,7 +160,9 @@ const NewUser = () => {
           <img src={rowImageL} className="newuser-rowImage"/>
         </div>
         <div className="col-md-10">
-          {getCards()}
+          <div className="row">
+            {getCards()}
+          </div>
         </div>
         <div className="col-md-1 my-auto text-start">
           <img src={rowImageR} className="newuser-rowImage"/>

@@ -9,6 +9,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+a, a:visited, a:hover{
+  color: inherit;
+  text-decoration: inherit;
+}
+
 .buttonPrincipal{
   border-radius: 15px;
   background-color: #0d6efd;
@@ -38,6 +43,12 @@ code {
   color: black;
 }
 
+.zencluLink{
+  color: #1893ff;
+  cursor: pointer;
+  font-weight: 800;
+}
+
 .zencluInput{
   border: 0px;
   border-radius: 15px;
@@ -58,6 +69,10 @@ code {
   font-weight: 800;
 }
 
+.zencluMuted{
+  color: rgb(130, 130, 130);
+}
+
 .zencluSemiBold{
   font-weight: 600;
 }
@@ -70,6 +85,10 @@ code {
 
 .zencluPointer{
   cursor: pointer;
+}
+
+.zencluCursor{
+  cursor: default;
 }
 
 .icon-notification{
@@ -98,7 +117,7 @@ code {
   border: none;
   height: 3px;
   background-color: #f2f2e9;
-  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 800, from(#000000), to(#ffffff));
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 800, from(#000000), to(rgba(255,255,255,0)));
 }
 
 .tabActive{

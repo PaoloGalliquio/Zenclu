@@ -1,35 +1,35 @@
 import './ZWallet.css'
-import NavbarZ from "../NavBar/NavbarZ";
-import Footer from '../Footer/Footer';
+import NavbarZ from "../Shared/NavBar/NavbarZ";
+import Footer from '../Shared/Footer/Footer';
+import HeaderTitle from '../Shared/HeaderTitle/HeaderTitle';
+import TabSelector from "../Shared/TabSelector/TabSelector";
 import image1 from '../../assets/Iconos/Gray-Facebook.png'
 import image2 from '../../assets/Iconos/Recurso 40.png'
 import image3 from '../../assets/Iconos/Recurso 37.png'
 
 const Zwalet = () => {
-  const iconSize = "80px";
+  const tabs = [
+    {
+      name: 'ZCoins',
+      image: image2,
+      active: true
+    },
+    {
+      name: 'ZPoints',
+      image: image3,
+      active: false
+    }
+  ];
+  
   return (
     <>
       <NavbarZ />
-      <div className="row w-100 d-flex wallet-section1">
-        <div className="wallet-icon">
-          <img src={image1} alt="ZWallet" className='m-0 p-0' height={"50px"}/>
-        </div>
-        <div className="col justify-content-center align-self-center">
-          <h2 className="zencluBold">ZWallet</h2>
-        </div>
-      </div>
-      <div className="row w-100 text-center wallet-section2">
-        <div className="col tabActive pb-2">
-          <img src={image2} alt="ZCoins" height={iconSize}/>
-          <h4 className="zencluBold mt-2">ZCoins</h4>
-        </div>
-        <div className="col tabNotActive">
-          <img src={image3} alt="ZPoints" height={iconSize}/>
-          <h4 className="zencluBold mt-2">ZPoints</h4>
-        </div>
-      </div>
+      <HeaderTitle 
+        image = {image1}
+        title = "ZWallet"
+      />
+      <TabSelector tabs = {tabs} haveImage = {true}/>
       <div className="row w-100 text-center">
-        <span className="lineaGradiente"></span>
         <h5 className="mt-3 wallet-total zencluBold">Total actual</h5>
         <h1 className="zencluBold">2,763</h1>
       </div>

@@ -1,8 +1,8 @@
 import TrendCard from "./TrendCard";
-import image1 from "../../assets/fotos/Recurso 50.png";
-import image2 from "../../assets/fotos/Recurso 49.png";
-import image3 from "../../assets/fotos/Recurso 48.png";
-import image4 from "../../assets/fotos/Recurso 47.png";
+import image1 from "../../../assets/fotos/Recurso 50.png";
+import image2 from "../../../assets/fotos/Recurso 49.png";
+import image3 from "../../../assets/fotos/Recurso 48.png";
+import image4 from "../../../assets/fotos/Recurso 47.png";
 
 const getCards = () => {
   const cardInfo = [
@@ -14,15 +14,19 @@ const getCards = () => {
   return(
     <div className="row">
       {cardInfo.map((info) => {
-        return <TrendCard
-          key = {info.id}
-          image = {info.image}
-          title = {info.title}
-          author = {info.author}
-          value = {info.value}
-          type = {info.type}
-          isLive = {info.isLive}
-        />;
+        return (
+          <div className="col ps-2 pe-2" key={info.id}>
+            <TrendCard
+              key = {info.id}
+              image = {info.image}
+              title = {info.title}
+              author = {info.author}
+              value = {info.value}
+              type = {info.type}
+              isLive = {info.isLive}
+            />
+          </div>
+        );
       })}
     </div>
   );
@@ -32,7 +36,7 @@ const TrendList = () => {
   return (
     <div className="row mt-3 w-100 m-0">
       <div className="col-md-1 my-auto text-end">
-        <img src={require("../../assets/Iconos/Recurso 54.png")} />
+        <img src={require("../../../assets/Iconos/Recurso 54.png")} />
       </div>
       <div className="col-md-10">
         <div className="row text-black trending mx-auto">
@@ -43,7 +47,7 @@ const TrendList = () => {
         </div>
       </div>
       <div className="col-md-1 my-auto">
-        <img src={require("../../assets/Iconos/Recurso 53.png")} />
+        <img src={require("../../../assets/Iconos/Recurso 53.png")} />
       </div>
     </div>
   );

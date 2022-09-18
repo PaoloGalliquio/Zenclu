@@ -1,8 +1,8 @@
 import SubscriptionCard from "./SubscriptionCard";
-import image1 from "../../assets/fotos/Recurso 42.png"
-import image2 from "../../assets/fotos/Recurso 11.png"
-import image3 from "../../assets/fotos/Recurso 12.png"
-import image4 from "../../assets/fotos/Recurso 11.png"
+import image1 from "../../../assets/fotos/Recurso 42.png"
+import image2 from "../../../assets/fotos/Recurso 11.png"
+import image3 from "../../../assets/fotos/Recurso 12.png"
+import image4 from "../../../assets/fotos/Recurso 11.png"
 
 const getCards = () => {
   const cardInfo = [
@@ -15,14 +15,18 @@ const getCards = () => {
   return(
     <div className="row mx-auto">
       {cardInfo.map((info) => {
-        return <SubscriptionCard
-          key = {info.id}
-          image = {info.image}
-          title = {info.title}
-          author = {info.author}
-          views = {info.views}
-          type = {info.type}
-        />;
+        return (
+        <div className="col ps-2 pe-2" key={info.id}>
+          <SubscriptionCard
+            key = {info.id}
+            image = {info.image}
+            title = {info.title}
+            author = {info.author}
+            views = {info.views}
+            type = {info.type}
+          />
+        </div>
+        );
       })}
     </div>
   );

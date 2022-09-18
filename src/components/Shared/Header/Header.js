@@ -1,4 +1,4 @@
-import Logo from "../../assets/Iconos/Recurso 32.png";
+import Logo from "../../../assets/Iconos/Recurso 32.png";
 import "./Header.css"
 
 const Header = () => {

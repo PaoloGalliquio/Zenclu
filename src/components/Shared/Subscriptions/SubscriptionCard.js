@@ -1,5 +1,5 @@
 import { Card, Button } from "react-bootstrap";
-import viewsIcon from "../../assets/Iconos/Recurso 52.png"
+import viewsIcon from "../../../assets/Iconos/Recurso 52.png"
 
 const typeInfo = (type) => {
   if( type == "Video"){
@@ -15,7 +15,7 @@ const typeInfo = (type) => {
 
 export default function SubscriptionCard ( props ) {
   return (
-    <Card className="m-2 col-md-3 mx-auto zencluShadow" style={{ width: "20rem"}}>
+    <Card className="ps-2 pe-2 pt-0 border-0 zencluShadow">
       <Card.Img className="mt-2" variant="top" src={props.image}/>
       <Card.Body className="pt-3 pe-0 ps-0 pb-3">
         <h5><b>{props.title}</b></h5>

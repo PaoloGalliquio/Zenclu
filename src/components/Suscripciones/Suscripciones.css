@@ -1,0 +1,30 @@
+.suscripciones-creadores{
+  background-color: #ededed;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.creadoresQueSigo-title{
+  padding-bottom: 1%;
+}
+
+.subscripciones-creator-card{
+  background-color: white;
+  max-width: 297px;
+  min-width: 297px;
+  border-radius: 15px;
+  margin: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.suscripciones-videos{
+  background-color: #fafafa;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.sus-videos-cards{
+  padding-left: 5%;
+  padding-right: 5%;
+}
