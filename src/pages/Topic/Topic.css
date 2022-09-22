@@ -1,0 +1,26 @@
+.topic-title-container{
+  position: relative;
+}
+
+.topic-title{
+  font-size: 40px;
+}
+
+.topic-title-select{
+  width: 20%;
+  height: 60px;
+}
+
+.topic-videos-cards{
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #ededed;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.topic-Retroceder{
+  position: absolute;
+  font-size: 25px;
+  margin-left: 80px;
+}

@@ -1,0 +1,23 @@
+.strore-tendencia{
+  background-color: #ededed;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.store-title{
+  padding-bottom: 1%;
+}
+
+.store-tendencias-card{
+  background-color: white;
+  border-radius: 15px;
+  margin: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.strore-productos{
+  background-color: white;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}

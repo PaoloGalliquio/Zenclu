@@ -1,7 +1,7 @@
 import "./NavbarZ.css"
-import image1 from "../../../assets/Iconos/Recurso 36.png";
-import image2 from "../../../assets/Iconos/Recurso 37.png";
-import image3 from "../../../assets/Iconos/Recurso 38.png";
+import image1 from "../../../assets/Iconos/NavBar/AddIcons/VideoIcon.png";
+import image2 from "../../../assets/Iconos/NavBar/AddIcons/CalendarIcon.png";
+import image3 from "../../../assets/Iconos/NavBar/AddIcons/ShakeIcon.png";
 
 const Add = () => {
   const optionImgWidth = "50px";
@@ -28,7 +28,7 @@ const Add = () => {
   ];
 
   return(
-    <div className="navbar-background">
+    <div className="navbar-background fadeIn fast">
       <div className="navbar-triangle"></div>
       {options.map(option => {
         return(

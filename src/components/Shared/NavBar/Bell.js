@@ -2,7 +2,9 @@ import "./NavbarZ.css"
 import image1 from "../../../assets/fotos/Recurso 43.png";
 import image2 from "../../../assets/fotos/Recurso 44.png";
 import image3 from "../../../assets/fotos/Recurso 45.png";
-import image4 from "../../../assets/Iconos/Recurso 30.png";
+import messageIcon from "../../../assets/Iconos/NavBar/BellIcons/Recurso 30.png";
+import reactionIcon from "../../../assets/Iconos/NavBar/BellIcons/Recurso 29.png";
+import followIcon from "../../../assets/Iconos/NavBar/BellIcons/Recurso 31.png";
 
 const Bell = () => {
   const creatorImgWidth = "50px";
@@ -13,24 +15,24 @@ const Bell = () => {
       name: 'Tamara Dueñas',
       message: 'Tienes un nuevo mensaje...',
       image: image1,
-      notification: image4
+      notification: messageIcon
     },
     {
       name: 'Ricardo Mosquera',
       message: 'Ha reaccionado un video...',
       image: image2,
-      notification: image4
+      notification: reactionIcon
     },
     {
       name: 'Anna Hassinger',
       message: 'Ha solicitado seguirte en...',
       image: image3,
-      notification: image4
+      notification: followIcon
     }
   ];
 
   return(
-    <div className="navbar-background zencluCursor">
+    <div className="navbar-background zencluCursor fadeIn fast">
       <div className="navbar-triangle"></div>
       {creators.map(creator => {
         return(

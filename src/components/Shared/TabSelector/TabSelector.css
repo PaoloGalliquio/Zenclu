@@ -2,3 +2,7 @@
   padding-left: 35%;
   padding-right: 35%;
 }
+
+.tabSelector-icon{
+  object-fit: contain;
+}

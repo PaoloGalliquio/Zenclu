@@ -1,22 +1,22 @@
 import './ZWallet.css'
-import NavbarZ from "../Shared/NavBar/NavbarZ";
-import Footer from '../Shared/Footer/Footer';
-import HeaderTitle from '../Shared/HeaderTitle/HeaderTitle';
-import TabSelector from "../Shared/TabSelector/TabSelector";
-import image1 from '../../assets/Iconos/Gray-Facebook.png'
-import image2 from '../../assets/Iconos/Recurso 40.png'
-import image3 from '../../assets/Iconos/Recurso 37.png'
+import NavbarZ from "../../components/Shared/NavBar/NavbarZ";
+import Footer from '../../components/Shared/Footer/Footer';
+import HeaderTitle from '../../components/Shared/HeaderTitle/HeaderTitle';
+import TabSelector from "../../components/Shared/TabSelector/TabSelector";
+import ZWalletIcon from '../../assets/Iconos/ZWallet/Recurso 32.png'
+import ZCoinsIcon from '../../assets/Iconos/ZWallet/Recurso 33.png'
+import ZPoints from '../../assets/Iconos/ZWallet/Recurso 34.png'
 
 const Zwalet = () => {
   const tabs = [
     {
       name: 'ZCoins',
-      image: image2,
+      image: ZCoinsIcon,
       active: true
     },
     {
       name: 'ZPoints',
-      image: image3,
+      image: ZPoints,
       active: false
     }
   ];
@@ -25,7 +25,7 @@ const Zwalet = () => {
     <>
       <NavbarZ />
       <HeaderTitle 
-        image = {image1}
+        image = {ZWalletIcon}
         title = "ZWallet"
       />
       <TabSelector tabs = {tabs} haveImage = {true}/>

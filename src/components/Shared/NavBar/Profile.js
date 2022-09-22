@@ -1,9 +1,14 @@
 import "./NavbarZ.css"
-import image0 from "../../../assets/Iconos/Recurso 7.png";
-import image1 from "../../../assets/Iconos/Recurso 36.png";
-import image2 from "../../../assets/Iconos/Recurso 37.png";
-import image3 from "../../../assets/Iconos/Recurso 38.png";
-import image4 from "../../../assets/Iconos/Recurso 33.png";
+import profileIcon from "../../../assets/Iconos/NavBar/ProfileIcons/Recurso 20.png";
+import editIcon from "../../../assets/Iconos/NavBar/ProfileIcons/Recurso 21.png";
+import suscriptionIcon from "../../../assets/Iconos/NavBar/ProfileIcons/Recurso 10.png";
+import contenidoIcon from "../../../assets/Iconos/NavBar/ProfileIcons/Recurso 11.png";
+import guardadoIcon from "../../../assets/Iconos/NavBar/ProfileIcons/Recurso 12.png";
+import walletIcon from "../../../assets/Iconos/NavBar/ProfileIcons/Recurso 13.png";
+import tiendaIcon from "../../../assets/Iconos/NavBar/ProfileIcons/Recurso 14.png";
+import historialIcon from "../../../assets/Iconos/NavBar/ProfileIcons/Recurso 15.png";
+import ayudaIcon from "../../../assets/Iconos/NavBar/ProfileIcons/Recurso 16.png";
+import contiguracionIcon from "../../../assets/Iconos/NavBar/ProfileIcons/Recurso 17.png";
 
 const Add = () => {
   const optionImgWidth = "50px";
@@ -11,49 +16,50 @@ const Add = () => {
   const options = [
     {
       name: 'Suscripciones',
-      image: image1,
+      image: suscriptionIcon,
       link: '/Suscripciones'
     },
     {
       name: 'Mi contenido',
-      image: image2
+      image: contenidoIcon
     },
     {
       name: 'Guardados',
-      image: image3
+      image: guardadoIcon
     },
     {
       name: 'Z Wallet',
-      image: image1,
+      image: walletIcon,
       link: '/Zwallet'
     },
     {
       name: 'Tienda',
-      image: image2
+      image: tiendaIcon,
+      link: '/Tienda'
     },
     {
       name: 'Historial',
-      image: image3
+      image: historialIcon
     }
   ];
 
   const configurations = [
     {
       name: 'Ayuda',
-      image: image1
+      image: ayudaIcon
     },
     {
       name: 'Configuración',
-      image: image1
+      image: contiguracionIcon
     }
   ];
 
   return(
-    <div className="navbar-profile-background zencluCursor">
+    <div className="navbar-profile-background zencluCursor fadeIn fast">
       <div className="navbar-profile-triangle"></div>
       <div className="text-center">
-        <img src={image0} alt="Ernesto Rodrigo" width={"70px"}/>
-        <img src={image4} alt="Ernesto Rodrigo" width={"25px"} className="navbar-profile-close"/>
+        <img src={profileIcon} alt="Icono de perfil" width={"70px"}/>
+        <img src={editIcon} alt="Editar perfil" width={"25px"} className="navbar-profile-close"/>
       </div>
       <h6 className="text-center zencluBold mt-2">Ernesto Rodrigo</h6>
       <p className="text-center zencluLink">Ver todo</p>
@@ -65,7 +71,7 @@ const Add = () => {
               <>
                 <div className="col-md-3">
                   <a href={option.link}>
-                    <img src={option.image} alt={option.name} width={optionImgWidth}/>
+                    <img src={option.image} alt={option.name} width={optionImgWidth} className="navbar-profile-image"/>
                   </a> 
                 </div>
                 <div className="col-md-9 my-auto ps-3">
@@ -77,7 +83,7 @@ const Add = () => {
               :
               <>
                 <div className="col-md-3">
-                  <img src={option.image} alt={option.name} width={optionImgWidth}/>
+                  <img src={option.image} alt={option.name} width={optionImgWidth} className="navbar-profile-image"/>
                 </div>
                 <div className="col-md-9 my-auto ps-3">
                   <div className="p-0">{option.name}</div>
@@ -92,7 +98,7 @@ const Add = () => {
         return(
           <div className="row mb-2" key={configuration.name}>
             <div className="col-md-3">
-              <img src={configuration.image} alt={configuration.name} width={optionImgWidth}/>
+              <img src={configuration.image} alt={configuration.name} width={optionImgWidth} className="navbar-profile-image"/>
             </div>
             <div className="col-md-9 my-auto ps-4">
               <div className="p-0">{configuration.name}</div>

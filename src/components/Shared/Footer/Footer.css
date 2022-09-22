@@ -9,10 +9,6 @@
   position: absolute;
 }
 
-.footer-derechos{
-  color: #878f9c;
-}
-
 .footer-logo{
   height: 30px;
   object-fit: contain;
@@ -27,11 +23,18 @@
   padding-right: 20%;
 }
 
+.footer-socialMedia{
+  color: #3a3d41;
+}
+
 .footer-social{
-  margin-right: 35px;
   cursor: pointer;
 }
 
 .footer-logo-section{
   margin-top: 35px;
+}
+
+.footer-derechos{
+  color: #878f9c;
 }

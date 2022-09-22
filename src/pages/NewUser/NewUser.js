@@ -1,18 +1,18 @@
 import "./NewUser.css"
 import { Button, Form } from "react-bootstrap";
 import { useState } from 'react';
-import Registrarse from '../Register/Registrarse';
-import Ingresar from '../Login/Ingresar';
-import Informacion1 from '../Register/Informacion1';
-import Informacion2 from '../Register/Informacion2';
-import Footer from '../Shared/Footer/Footer';
-import Header from "../Shared/Header/Header";
+import Registrarse from '../../components/Register/Registrarse';
+import Ingresar from '../../components/Login/Ingresar';
+import Informacion1 from '../../components/Register/Informacion1';
+import Informacion2 from '../../components/Register/Informacion2';
+import Footer from '../../components/Shared/Footer/Footer';
+import Header from "../../components/Shared/Header/Header";
 import image1 from '../../assets/Iconos/Recurso 10.png';
 import image2 from '../../assets/Iconos/Recurso 9.png';
 import image3 from '../../assets/Iconos/Recurso 8.png';
 import image4 from '../../assets/Iconos/Recurso 7.png';
 import image5 from "../../assets/fotos/Recurso 42.png";
-import image6 from "../../assets/fotos/Recurso 11.png";
+import image6 from "../../assets/fotos/Recurso 3.png";
 import image7 from "../../assets/fotos/Recurso 12.png";
 import image8 from "../../assets/fotos/Recurso 11.png";
 import image9 from "../../assets/Iconos/Recurso 21.png";
@@ -20,12 +20,12 @@ import image10 from "../../assets/Iconos/Recurso 22.png";
 import image11 from "../../assets/Iconos/Recurso 23.png";
 import rowImageL from '../../assets/Iconos/Recurso 54.png';
 import rowImageR from '../../assets/Iconos/Recurso 53.png';
-import SubscriptionCard from '../Shared/Subscriptions/SubscriptionCard';
+import SubscriptionCard from '../../components/Shared/Subscriptions/SubscriptionCard';
 
 const getCards = () => {
   const cardInfo = [
     {id: 1, image : image5, title : "The science behind microchips", author : "Wired Creator", views : "2,2k", type : "Video"},
-    {id: 2, image : image6, title : "Birds of Latin America", author : "Blue Planet", views : "1,3M", type : "Video"},
+    {id: 2, image : image6, title : "Inspiring skateboarding", author : "The Skate of Kate", views : "1,3M", type : "Video"},
     {id: 3, image : image7, title : "Secret recipes", author : "Kitchen hacks", views : "75k", type : "Curso"},
     {id: 4, image : image8, title : "Glamourus Makeup tutorial", author : "Colour tutorials", views : "3,7k", type : "Curso"}
   ];

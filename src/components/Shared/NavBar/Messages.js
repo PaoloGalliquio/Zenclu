@@ -1,10 +1,11 @@
 import "./NavbarZ.css"
 import { useState } from 'react';
-import image0 from "../../../assets/Iconos/Recurso 33.png";
+import closeIcon from "../../../assets/Iconos/NavBar/MessageIcons/Recurso 24.png";
+import editIcon from "../../../assets/Iconos/NavBar/MessageIcons/Recurso 23.png";
+import backIcon from "../../../assets/Iconos/NavBar/MessageIcons/Recurso 25.png";
 import image1 from "../../../assets/fotos/Recurso 43.png";
 import image2 from "../../../assets/fotos/Recurso 44.png";
-import image3 from "../../../assets/fotos/Recurso 45.png";
-import image4 from "../../../assets/Iconos/Recurso 30.png";
+import image3 from "../../../assets/fotos/Recurso 45.png"; 
 
 const Messages = () => {
   const chatImgWidth = "50px";
@@ -105,12 +106,12 @@ const Messages = () => {
     <div className="row text-center">
       <div className="col">
         <h5 className="zencluBold">Chats</h5>
-        <img src={image0} alt="Cerrar" width={"25px"} className="navbar-message-close"/>
+        <img src={closeIcon} alt="Cerrar" width={"25px"} className="navbar-message-close"/>
       </div>
     </div>
     <div className="row ms-1">
       <div className="col">
-        <img src={image0} alt="Editar" width={"25px"}/>
+        <img src={editIcon} alt="Editar" width={"25px"}/>
       </div>
     </div>
     <div className="row mb-3 mt-3">
@@ -163,7 +164,7 @@ const Messages = () => {
     <>
     <div className="row">
       <div className="col-md-2 ps-3 my-auto text-center">
-        <img src={image0} alt="Editar" className="zencluPointer" width={"25px"} onClick={() => {setIsChatOpen(false);}}/>
+        <img src={backIcon} alt="Retroceder" className="zencluPointer navbar-profile-image" width={"15 px"} onClick={() => {setIsChatOpen(false);}}/>
       </div>
       <div className="col-md-2 ps-0">
         <img src={selectedChat.image} alt={selectedChat.name} width={chatImgWidth}/>
@@ -175,7 +176,7 @@ const Messages = () => {
         <div className="row">
           <div className="col p-0 zencluMuted">Última conexión a las {selectedChat.lastConnection}</div>
         </div>
-        <img src={image0} alt="Cerrar" width={"25px"} className="navbar-message-close"/>
+        <img src={closeIcon} alt="Cerrar" width={"25px"} className="navbar-message-close"/>
       </div>
     </div>
     <div className="row mb-3 mt-3">
@@ -208,7 +209,7 @@ const Messages = () => {
   );
 
   return(
-    <div className="navbar-messages-background zencluCursor">
+    <div className="navbar-messages-background zencluCursor fadeIn fast">
       <div className="navbar-triangle"></div>
       {!isChatOpen && <>
       {cabeceraChats}

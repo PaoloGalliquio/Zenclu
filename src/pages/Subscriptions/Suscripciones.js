@@ -1,12 +1,12 @@
 import "./Suscripciones.css"
-import NavbarZ from "../Shared/NavBar/NavbarZ";
-import Footer from "../Shared/Footer/Footer";
+import NavbarZ from "../../components/Shared/NavBar/NavbarZ";
+import Footer from "../../components/Shared/Footer/Footer";
 import { Card } from "react-bootstrap";
+import headerImage from '../../assets/Iconos/Subscriptions/Recurso 10.png';
 import rowImageL from '../../assets/Iconos/Recurso 54.png';
 import rowImageR from '../../assets/Iconos/Recurso 53.png';
-import HeaderTitle from '../Shared/HeaderTitle/HeaderTitle';
-import TabSelector from "../Shared/TabSelector/TabSelector";
-import headerImage from '../../assets/Iconos/Gray-Facebook.png';
+import HeaderTitle from '../../components/Shared/HeaderTitle/HeaderTitle';
+import TabSelector from "../../components/Shared/TabSelector/TabSelector";
 import image1 from "../../assets/fotos/Recurso 43.png";
 import image2 from "../../assets/fotos/Recurso 45.png";
 import image3 from "../../assets/fotos/Recurso 44.png";
@@ -109,12 +109,12 @@ const Suscripciones = () => {
       <div className="row ms-0 me-0 creadoresQueSigo-title">
         <div className="col-md-1"></div>
         <div className="col-md-10">
-          <h4 className="zencluBold">Creadores que sigo</h4>
+          <h4 className="zencluBold ps-3">Creadores que sigo</h4>
         </div>
       </div>
       <div className="row ms-0 me-0">
         <div className="col-md-1 my-auto text-center zencluPointer">
-          <img src={rowImageL} className="newuser-rowImage"/>
+          <img src={rowImageL} className="newuser-rowImage" alt="left"/>
         </div>
         <div className="col-md-10">
           <div className="row">
@@ -135,7 +135,7 @@ const Suscripciones = () => {
           </div>
         </div>
         <div className="col-md-1 my-auto text-center zencluPointer">
-          <img src={rowImageR} className="newuser-rowImage"/>
+          <img src={rowImageR} className="newuser-rowImage" alt="right"/>
         </div>
       </div>
       <div className="row ms-0 me-0 mt-4 text-center">
