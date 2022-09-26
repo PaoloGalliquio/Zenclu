@@ -1,7 +1,10 @@
 import "./Store.css"
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import NavbarZ from "../../components/Shared/NavBar/NavbarZ";
 import Footer from '../../components/Shared/Footer/Footer';
+import Product from '../../components/Shared/Cards/Product';
 import StoreIcon from "../../assets/Iconos/Store/Recurso 14.png";
+import CartIcon from "../../assets/Iconos/Store/Recurso 1.png";
 import HeaderTitle from "../../components/Shared/HeaderTitle/HeaderTitle";
 import rowImageL from '../../assets/Iconos/Recurso 54.png';
 import rowImageR from '../../assets/Iconos/Recurso 53.png';
@@ -22,6 +25,7 @@ import creatorPhoto3 from '../../assets/fotos/Store/Recurso 49.png';
 import creatorPhoto4 from '../../assets/fotos/Store/Recurso 50.png'; 
 
 const Store = () => {
+  const shoppingCartSize = "150px";
   const productosTendencia = [
     {
       id: 0,
@@ -102,7 +106,9 @@ const Store = () => {
 
   const tendenciaPantalla = (
     <>
-    <div className="strore-tendencia">
+    <div className="store-tendencia pb-5">
+      <img src={CartIcon} alt="Carrito de compras" className="store-shopping-cart" width={shoppingCartSize}/>
+      <div className="store-number-products">2</div>
       <div className="row ms-0 me-0 store-title">
         <div className="col-md-1"></div>
         <div className="col-md-10">
@@ -111,53 +117,27 @@ const Store = () => {
       </div>
       <div className="row ms-0 me-0">
         <div className="col-md-1 my-auto text-center zencluPointer">
-          <img src={rowImageL} className="newuser-rowImage"/>
+          <img src={rowImageL} className="newuser-rowImage" alt="izquierda"/>
         </div>
         <div className="col-md-10">
           <div className="row">
             {productosTendencia.map(productoTendencia => {
               return(
-                <div className="col d-flex mb-3 align-items-stretch">
-                  <div className="card flex-fill">
-                    <img src={productoTendencia.photo} className="card-img-top p-1 rounded-3" alt={productoTendencia.name} />
-                    <div className="card-body p-1  d-flex flex-column ">
-                      <div className="row">
-                        <div className="col-3 text-center">
-                          <img src={productoTendencia.sellerPhoto} className=" img rounded-circle "
-                            style={{width:"35px", height:"35px"}} alt={productoTendencia.sellerName}/>
-                        </div>
-                        <div className="col-9 ">
-                          <h6 className="card-title m-0 ">{productoTendencia.title}</h6>
-                          <p className="card-text m-0"
-                            style={{fontSize: "13px", color: "rgb(157, 157, 157)", fontWeight: "500"}}>
-                            {productoTendencia.sellerName}
-                          </p>
-                          <p><b> {productoTendencia.priceDiscount} &nbsp;</b> 
-                          <span className="text-decoration-line-through">
-                            {productoTendencia.price}
-                          </span>
-                          </p>
-                        </div>
-                      </div>
-                      <div className="mt-auto">
-                        <div className="d-grid gap-1 mb-2">
-                          <button className="btn " style={{backgroundColor: "rgb(133, 221, 149)"}}> <b> Agregar
-                              al carrito </b> </button>
-                        </div>
-                        <div className="d-grid gap-1">
-                          <button className="btn text-white" style={{backgroundColor: "rgb(54, 178, 114)"}}> COMPRAR
-                            AHORA</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <Product
+                  id = {productoTendencia.id}
+                  photo = {productoTendencia.photo}
+                  title = {productoTendencia.title}
+                  sellerName = {productoTendencia.sellerName}
+                  sellerPhoto = {productoTendencia.sellerPhoto}
+                  priceDiscount = {productoTendencia.priceDiscount}
+                  price = {productoTendencia.price}
+                />
               );
             })}
           </div>
         </div>
         <div className="col-md-1 my-auto text-center zencluPointer">
-          <img src={rowImageR} className="newuser-rowImage"/>
+          <img src={rowImageR} className="newuser-rowImage" alt="derecha"/>
         </div>
       </div>
     </div>
@@ -166,22 +146,22 @@ const Store = () => {
 
   const productosPantalla = (
     <>
-    <div className="strore-productos">
+    <div className="strore-productos mb-4">
       <div className="row ms-0 me-0 store-title mb-4">
         <div className="col-md-1"></div>
         <div className="col-md-1 my-auto">
           <h4 className="zencluBold ps-3">Productos</h4>
         </div>
-        <div className="col-md-7 my-auto ps-5">
-          <button className="btn dropdown-toggle p-3 ps-5 pe-5" style={{backgroundColor: "rgba(181, 226, 245, 0.775)"}} type="button"
-            data-bs-toggle="dropdown" aria-expanded="false">
+        <div className="col-md-6 my-auto ps-5">
+          <button className="btn pt-2 pb-2 ps-5 store-categorias-dropdown" type="button">
             <b>Todas las categorías</b>
+            <ArrowBackIosNewIcon className="store-drowdown-icon"/>
           </button>
         </div>
-        <div className="col-md-2 my-auto text-end">
-          <button className="btn dropdown-toggle p-3 ps-5 pe-5" style={{backgroundColor: "rgba(223, 223, 223, 0.775)"}}
-            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <div className="col-md-3 my-auto text-end">
+          <button className="btn pt-2 pb-2 ps-5 store-precio-dropdown" type="button">
             <b>Precio más bajo</b>
+            <ArrowBackIosNewIcon className="store-drowdown-icon"/>
           </button>
         </div>
         <div className="col-md-1"></div>
@@ -192,41 +172,15 @@ const Store = () => {
           <div className="row">
             {productos.map(producto => {
               return(
-                <div className="col d-flex mb-3 align-items-stretch">
-                  <div className="card flex-fill">
-                    <img src={producto.photo} className="card-img-top p-1 rounded-3" alt={producto.name} />
-                    <div className="card-body p-1  d-flex flex-column ">
-                      <div className="row">
-                        <div className="col-3 text-center">
-                          <img src={producto.sellerPhoto} className=" img rounded-circle "
-                            style={{width:"35px", height:"35px"}} alt={producto.sellerName}/>
-                        </div>
-                        <div className="col-9 ">
-                          <h6 className="card-title m-0 ">{producto.title}</h6>
-                          <p className="card-text m-0"
-                            style={{fontSize: "13px", color: "rgb(157, 157, 157)", fontWeight: "500"}}>
-                            {producto.sellerName}
-                          </p>
-                          <p><b> {producto.priceDiscount} &nbsp;</b> 
-                          <span className="text-decoration-line-through">
-                            {producto.price}
-                          </span>
-                          </p>
-                        </div>
-                      </div>
-                      <div className="mt-auto">
-                        <div className="d-grid gap-1 mb-2">
-                          <button className="btn " style={{backgroundColor: "rgb(133, 221, 149)"}}> <b> Agregar
-                              al carrito </b> </button>
-                        </div>
-                        <div className="d-grid gap-1">
-                          <button className="btn text-white" style={{backgroundColor: "rgb(54, 178, 114)"}}> COMPRAR
-                            AHORA</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <Product
+                  id = {producto.id}
+                  photo = {producto.photo}
+                  title = {producto.title}
+                  sellerName = {producto.sellerName}
+                  sellerPhoto = {producto.sellerPhoto}
+                  priceDiscount = {producto.priceDiscount}
+                  price = {producto.price}
+                />
               );
             })}
           </div>

@@ -20,7 +20,7 @@ import image10 from "../../assets/Iconos/Recurso 22.png";
 import image11 from "../../assets/Iconos/Recurso 23.png";
 import rowImageL from '../../assets/Iconos/Recurso 54.png';
 import rowImageR from '../../assets/Iconos/Recurso 53.png';
-import SubscriptionCard from '../../components/Shared/Subscriptions/SubscriptionCard';
+import SubscriptionView from "../../components/Shared/Cards/SubscriptionView";
 
 const getCards = () => {
   const cardInfo = [
@@ -34,8 +34,7 @@ const getCards = () => {
     <div className="row mx-auto">
       {cardInfo.map((info) => {
         return (
-        <div className="col">
-          <SubscriptionCard
+          <SubscriptionView
             key = {info.id}
             image = {info.image}
             title = {info.title}
@@ -43,7 +42,6 @@ const getCards = () => {
             views = {info.views}
             type = {info.type}
           />
-        </div>
         );
       })}
     </div>
@@ -157,7 +155,7 @@ const NewUser = () => {
       </div>
       <div className="row mt-5">
         <div className="col-md-1 my-auto text-end ">
-          <img src={rowImageL} className="newuser-rowImage"/>
+          <img src={rowImageL} className="newuser-rowImage" alt="izquierda"/>
         </div>
         <div className="col-md-10">
           <div className="row">
@@ -165,7 +163,7 @@ const NewUser = () => {
           </div>
         </div>
         <div className="col-md-1 my-auto text-start">
-          <img src={rowImageR} className="newuser-rowImage"/>
+          <img src={rowImageR} className="newuser-rowImage" alt="derecha"/>
         </div>
       </div>
     </div>

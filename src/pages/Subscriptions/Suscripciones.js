@@ -1,7 +1,6 @@
 import "./Suscripciones.css"
 import NavbarZ from "../../components/Shared/NavBar/NavbarZ";
 import Footer from "../../components/Shared/Footer/Footer";
-import { Card } from "react-bootstrap";
 import headerImage from '../../assets/Iconos/Subscriptions/Recurso 10.png';
 import rowImageL from '../../assets/Iconos/Recurso 54.png';
 import rowImageR from '../../assets/Iconos/Recurso 53.png';
@@ -16,11 +15,10 @@ import image6 from "../../assets/fotos/Recurso 42.png"
 import image7 from "../../assets/fotos/Recurso 11.png"
 import image8 from "../../assets/fotos/Recurso 12.png"
 import image9 from "../../assets/fotos/Recurso 11.png"
-import { Rating } from "@mui/material";
+import SubscriptionRanked from "../../components/Shared/Cards/SubscriptionRanked";
 
 const Suscripciones = () => {
   const creatorPhotoWidth = "200px";
-  const videoCreatorPhotoWidth = "70px";
 
   const creators = [
     {
@@ -154,24 +152,15 @@ const Suscripciones = () => {
       <div className="row ms-0 me-0 sus-videos-cards">
         {videos.map(video => {
           return (
-            <div className="col ps-2 pe-2" key={video.id}>
-              <Card className="ps-2 pe-2 pt-0 border-0 mx-auto">
-                <Card.Img className="mt-2" variant="top" src={video.image} alt={video.creator}/>
-                <Card.Body className="pt-3 pe-0 ps-0 pb-1">
-                  <div className="row">
-                    <div className="col-md-3 text-center">
-                      <img src={video.creatorPhoto} alt={video.creator} width={videoCreatorPhotoWidth}/>
-                    </div>
-                    <div className="col-md-9 ps-0">
-                      <h5><b>{video.title}</b></h5>
-                      <h6>{video.creator}</h6>
-                      <Rating name="read-only" value={video.raking} readOnly />
-                      <h5 className="zencluBold">S/ {video.price}</h5>
-                    </div>
-                  </div>
-                </Card.Body>
-              </Card>
-            </div>
+            <SubscriptionRanked
+              id = {video.id}
+              image = {video.image}
+              creator = {video.creator}
+              creatorPhoto = {video.creatorPhoto}
+              title = {video.title}
+              raking = {video.raking}
+              price = {video.price}
+            />
           )
         })}
       </div>

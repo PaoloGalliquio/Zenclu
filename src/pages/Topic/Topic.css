@@ -2,6 +2,22 @@
   position: relative;
 }
 
+.topic-categorias-dropdown{
+  font-size: 20px;
+  padding-right: 75px;
+  background-color: #ededed;
+  border-radius: 20px;
+  position: relative;
+}
+
+.topic-drowdown-icon{
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 0;
+  margin-top: 5px;
+  margin-right: 15px;
+}
+
 .topic-title{
   font-size: 40px;
 }
@@ -17,6 +33,11 @@
   background-color: #ededed;
   padding-top: 2%;
   padding-bottom: 2%;
+}
+
+.topic-products-cards{
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .topic-Retroceder{

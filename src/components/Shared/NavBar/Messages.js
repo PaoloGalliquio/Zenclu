@@ -192,7 +192,7 @@ const Messages = () => {
     <div className="pb-3">
     {chatMessages.map(message => {
       return(
-        <div className="row ps-3 pe-3">
+        <div className="row ps-3 pe-3" key={message.id}>
           {message.isMine && <div className="col-md-4"></div>}
           <div className={`col-md-8 navbar-message-message 
             ${message.notLast ? 

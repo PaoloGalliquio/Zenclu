@@ -1,5 +1,6 @@
-.strore-tendencia{
+.store-tendencia{
   background-color: #ededed;
+  position: relative;
   padding-top: 2%;
   padding-bottom: 2%;
 }
@@ -20,4 +21,44 @@
   background-color: white;
   padding-top: 2%;
   padding-bottom: 2%;
+}
+
+.store-categorias-dropdown{
+  background-color: rgba(181, 226, 245, 0.775);
+  font-size: 22px;
+  padding-right: 75px;
+  position: relative;
+}
+
+.store-precio-dropdown{
+  background-color: rgba(223, 223, 223, 0.775);
+  font-size: 22px;
+  padding-right: 75px;
+  position: relative;
+}
+
+.store-drowdown-icon{
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 0;
+  margin-top: 5px;
+  margin-right: 15px;
+}
+
+.store-shopping-cart{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: -80px;
+}
+
+.store-number-products{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: -47px;
+  margin-right: 72px;
+  color: #B5FF00;
+  font-size: 20px;
+  font-weight: 800;
 }
