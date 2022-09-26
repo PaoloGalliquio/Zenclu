@@ -1,12 +1,12 @@
 import Logo from "../../../assets/Iconos/Recurso 32.png";
-import "./Header.css"
+import "./Header.css";
 
 const Header = () => {
-  return(
+  return (
     <div className="header-background">
       <img src={Logo} className="header-image" />
     </div>
   );
-}
+};
 
 export default Header;

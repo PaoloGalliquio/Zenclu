@@ -1,34 +1,31 @@
-import './ZWallet.css'
+import "./ZWallet.css";
 import NavbarZ from "../../components/Shared/NavBar/NavbarZ";
-import Footer from '../../components/Shared/Footer/Footer';
-import HeaderTitle from '../../components/Shared/HeaderTitle/HeaderTitle';
+import Footer from "../../components/Shared/Footer/Footer";
+import HeaderTitle from "../../components/Shared/HeaderTitle/HeaderTitle";
 import TabSelector from "../../components/Shared/TabSelector/TabSelector";
-import ZWalletIcon from '../../assets/Iconos/ZWallet/Recurso 32.png'
-import ZCoinsIcon from '../../assets/Iconos/ZWallet/Recurso 33.png'
-import ZPoints from '../../assets/Iconos/ZWallet/Recurso 34.png'
+import ZWalletIcon from "../../assets/Iconos/ZWallet/Recurso 32.png";
+import ZCoinsIcon from "../../assets/Iconos/ZWallet/Recurso 33.png";
+import ZPoints from "../../assets/Iconos/ZWallet/Recurso 34.png";
 
 const Zwalet = () => {
   const tabs = [
     {
-      name: 'ZCoins',
+      name: "ZCoins",
       image: ZCoinsIcon,
-      active: true
+      active: true,
     },
     {
-      name: 'ZPoints',
+      name: "ZPoints",
       image: ZPoints,
-      active: false
-    }
+      active: false,
+    },
   ];
-  
+
   return (
     <>
       <NavbarZ />
-      <HeaderTitle 
-        image = {ZWalletIcon}
-        title = "ZWallet"
-      />
-      <TabSelector tabs = {tabs} haveImage = {true}/>
+      <HeaderTitle image={ZWalletIcon} title="ZWallet" />
+      <TabSelector tabs={tabs} haveImage={true} />
       <div className="row w-100 text-center">
         <h5 className="mt-3 wallet-total zencluBold">Total actual</h5>
         <h1 className="zencluBold">2,763</h1>
@@ -51,6 +48,6 @@ const Zwalet = () => {
       <Footer />
     </>
   );
-}
+};
 
-export default Zwalet
+export default Zwalet;

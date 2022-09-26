@@ -1,20 +1,20 @@
-import "./Suscripciones.css"
+import "./Suscripciones.css";
 import NavbarZ from "../../components/Shared/NavBar/NavbarZ";
 import Footer from "../../components/Shared/Footer/Footer";
-import headerImage from '../../assets/Iconos/Subscriptions/Recurso 10.png';
-import rowImageL from '../../assets/Iconos/Recurso 54.png';
-import rowImageR from '../../assets/Iconos/Recurso 53.png';
-import HeaderTitle from '../../components/Shared/HeaderTitle/HeaderTitle';
+import headerImage from "../../assets/Iconos/Subscriptions/Recurso 10.png";
+import rowImageL from "../../assets/Iconos/Recurso 54.png";
+import rowImageR from "../../assets/Iconos/Recurso 53.png";
+import HeaderTitle from "../../components/Shared/HeaderTitle/HeaderTitle";
 import TabSelector from "../../components/Shared/TabSelector/TabSelector";
 import image1 from "../../assets/fotos/Recurso 43.png";
 import image2 from "../../assets/fotos/Recurso 45.png";
 import image3 from "../../assets/fotos/Recurso 44.png";
 import image4 from "../../assets/fotos/Recurso 43.png";
 import image5 from "../../assets/fotos/Recurso 46.png";
-import image6 from "../../assets/fotos/Recurso 42.png"
-import image7 from "../../assets/fotos/Recurso 11.png"
-import image8 from "../../assets/fotos/Recurso 12.png"
-import image9 from "../../assets/fotos/Recurso 11.png"
+import image6 from "../../assets/fotos/Recurso 42.png";
+import image7 from "../../assets/fotos/Recurso 11.png";
+import image8 from "../../assets/fotos/Recurso 12.png";
+import image9 from "../../assets/fotos/Recurso 11.png";
 import SubscriptionRanked from "../../components/Shared/Cards/SubscriptionRanked";
 
 const Suscripciones = () => {
@@ -23,84 +23,84 @@ const Suscripciones = () => {
   const creators = [
     {
       id: 0,
-      name: 'InConcrete',
-      photo: image1
+      name: "InConcrete",
+      photo: image1,
     },
     {
       id: 1,
-      name: 'Manuel Villegas',
-      photo: image2
+      name: "Manuel Villegas",
+      photo: image2,
     },
     {
       id: 2,
-      name: 'Anna Hassinger',
-      photo: image3
+      name: "Anna Hassinger",
+      photo: image3,
     },
     {
       id: 3,
-      name: 'Zendex Arts',
-      photo: image4
+      name: "Zendex Arts",
+      photo: image4,
     },
     {
       id: 4,
-      name: 'Ricardo Mosquera',
-      photo: image5
-    }
+      name: "Ricardo Mosquera",
+      photo: image5,
+    },
   ];
 
   const tabs = [
     {
-      name: 'Videos suscritos',
-      active: true
+      name: "Videos suscritos",
+      active: true,
     },
     {
-      name: 'Mis videos',
-      active: false
-    }
+      name: "Mis videos",
+      active: false,
+    },
   ];
 
   const videos = [
     {
       id: 0,
       image: image6,
-      title: 'Become an amazing playboard builder',
-      price: '39,90',
+      title: "Become an amazing playboard builder",
+      price: "39,90",
       raking: 4,
-      creator: 'Wood creations',
+      creator: "Wood creations",
       creatorPhoto: image1,
-      isLive: false
+      isLive: false,
     },
     {
       id: 1,
       image: image7,
-      title: 'Become an amazing playboard builder',
-      price: '39,90',
+      title: "Become an amazing playboard builder",
+      price: "39,90",
       raking: 4,
-      creator: 'Wood creations',
+      creator: "Wood creations",
       creatorPhoto: image1,
-      isLive: false
+      isLive: false,
     },
     {
       id: 2,
       image: image8,
-      title: 'Become an amazing playboard builder',
-      price: '39,90',
+      title: "Become an amazing playboard builder",
+      price: "39,90",
       raking: 4,
-      creator: 'Wood creations',
+      creator: "Wood creations",
       creatorPhoto: image1,
-      isLive: false
+      isLive: false,
     },
     {
       id: 3,
       image: image9,
-      title: 'Become an amazing playboard builder',
-      price: '39,90',
+      title: "Become an amazing playboard builder",
+      price: "39,90",
       raking: 4,
-      creator: 'Wood creations',
+      creator: "Wood creations",
       creatorPhoto: image1,
-      isLive: true
-    }
-  ]
+      isLive: true,
+    },
+  ];
 
   const creadoresQueSigo = (
     <div className="suscripciones-creadores">
@@ -112,16 +112,22 @@ const Suscripciones = () => {
       </div>
       <div className="row ms-0 me-0">
         <div className="col-md-1 my-auto text-center zencluPointer">
-          <img src={rowImageL} className="newuser-rowImage" alt="left"/>
+          <img src={rowImageL} className="newuser-rowImage" alt="left" />
         </div>
         <div className="col-md-10">
           <div className="row">
-            {creators.map(creator => {
-              return(
-                <div className="col subscripciones-creator-card" key={creator.id}>
+            {creators.map((creator) => {
+              return (
+                <div
+                  className="col subscripciones-creator-card"
+                  key={creator.id}>
                   <div className="row text-center">
                     <div className="col">
-                      <img src={creator.photo} alt={creator.name} width={creatorPhotoWidth} />
+                      <img
+                        src={creator.photo}
+                        alt={creator.name}
+                        width={creatorPhotoWidth}
+                      />
                     </div>
                   </div>
                   <div className="row text-center mt-3">
@@ -133,7 +139,7 @@ const Suscripciones = () => {
           </div>
         </div>
         <div className="col-md-1 my-auto text-center zencluPointer">
-          <img src={rowImageR} className="newuser-rowImage" alt="right"/>
+          <img src={rowImageR} className="newuser-rowImage" alt="right" />
         </div>
       </div>
       <div className="row ms-0 me-0 mt-4 text-center">
@@ -147,21 +153,21 @@ const Suscripciones = () => {
   const videosSuscritos = (
     <div className="suscripciones-videos">
       <div className="pb-5">
-        <TabSelector tabs = {tabs} haveImage = {false}/>
+        <TabSelector tabs={tabs} haveImage={false} />
       </div>
       <div className="row ms-0 me-0 sus-videos-cards">
-        {videos.map(video => {
+        {videos.map((video) => {
           return (
             <SubscriptionRanked
-              id = {video.id}
-              image = {video.image}
-              creator = {video.creator}
-              creatorPhoto = {video.creatorPhoto}
-              title = {video.title}
-              raking = {video.raking}
-              price = {video.price}
+              id={video.id}
+              image={video.image}
+              creator={video.creator}
+              creatorPhoto={video.creatorPhoto}
+              title={video.title}
+              raking={video.raking}
+              price={video.price}
             />
-          )
+          );
         })}
       </div>
       <div className="row ms-0 me-0 mt-5 text-center">
@@ -170,20 +176,17 @@ const Suscripciones = () => {
         </div>
       </div>
     </div>
-  )
+  );
 
-  return(
+  return (
     <>
-    <NavbarZ />
-      <HeaderTitle 
-        image = {headerImage}
-        title = "Suscripciones"
-      />
+      <NavbarZ />
+      <HeaderTitle image={headerImage} title="Suscripciones" />
       {creadoresQueSigo}
       {videosSuscritos}
-    <Footer />
+      <Footer />
     </>
   );
-}
+};
 
 export default Suscripciones;

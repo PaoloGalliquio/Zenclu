@@ -1,16 +1,16 @@
-import "./NewUser.css"
+import "./NewUser.css";
 import { Button, Form } from "react-bootstrap";
-import { useState } from 'react';
-import Registrarse from '../../components/Register/Registrarse';
-import Ingresar from '../../components/Login/Ingresar';
-import Informacion1 from '../../components/Register/Informacion1';
-import Informacion2 from '../../components/Register/Informacion2';
-import Footer from '../../components/Shared/Footer/Footer';
+import { useState } from "react";
+import Registrarse from "../../components/Register/Registrarse";
+import Ingresar from "../../components/Login/Ingresar";
+import Informacion1 from "../../components/Register/Informacion1";
+import Informacion2 from "../../components/Register/Informacion2";
+import Footer from "../../components/Shared/Footer/Footer";
 import Header from "../../components/Shared/Header/Header";
-import image1 from '../../assets/Iconos/Recurso 10.png';
-import image2 from '../../assets/Iconos/Recurso 9.png';
-import image3 from '../../assets/Iconos/Recurso 8.png';
-import image4 from '../../assets/Iconos/Recurso 7.png';
+import image1 from "../../assets/Iconos/Recurso 10.png";
+import image2 from "../../assets/Iconos/Recurso 9.png";
+import image3 from "../../assets/Iconos/Recurso 8.png";
+import image4 from "../../assets/Iconos/Recurso 7.png";
 import image5 from "../../assets/fotos/Recurso 42.png";
 import image6 from "../../assets/fotos/Recurso 3.png";
 import image7 from "../../assets/fotos/Recurso 12.png";
@@ -18,35 +18,63 @@ import image8 from "../../assets/fotos/Recurso 11.png";
 import image9 from "../../assets/Iconos/Recurso 21.png";
 import image10 from "../../assets/Iconos/Recurso 22.png";
 import image11 from "../../assets/Iconos/Recurso 23.png";
-import rowImageL from '../../assets/Iconos/Recurso 54.png';
-import rowImageR from '../../assets/Iconos/Recurso 53.png';
+import rowImageL from "../../assets/Iconos/Recurso 54.png";
+import rowImageR from "../../assets/Iconos/Recurso 53.png";
 import SubscriptionView from "../../components/Shared/Cards/SubscriptionView";
 
 const getCards = () => {
   const cardInfo = [
-    {id: 1, image : image5, title : "The science behind microchips", author : "Wired Creator", views : "2,2k", type : "Video"},
-    {id: 2, image : image6, title : "Inspiring skateboarding", author : "The Skate of Kate", views : "1,3M", type : "Video"},
-    {id: 3, image : image7, title : "Secret recipes", author : "Kitchen hacks", views : "75k", type : "Curso"},
-    {id: 4, image : image8, title : "Glamourus Makeup tutorial", author : "Colour tutorials", views : "3,7k", type : "Curso"}
+    {
+      id: 1,
+      image: image5,
+      title: "The science behind microchips",
+      author: "Wired Creator",
+      views: "2,2k",
+      type: "Video",
+    },
+    {
+      id: 2,
+      image: image6,
+      title: "Inspiring skateboarding",
+      author: "The Skate of Kate",
+      views: "1,3M",
+      type: "Video",
+    },
+    {
+      id: 3,
+      image: image7,
+      title: "Secret recipes",
+      author: "Kitchen hacks",
+      views: "75k",
+      type: "Curso",
+    },
+    {
+      id: 4,
+      image: image8,
+      title: "Glamourus Makeup tutorial",
+      author: "Colour tutorials",
+      views: "3,7k",
+      type: "Curso",
+    },
   ];
 
-  return(
+  return (
     <div className="row mx-auto">
       {cardInfo.map((info) => {
         return (
           <SubscriptionView
-            key = {info.id}
-            image = {info.image}
-            title = {info.title}
-            author = {info.author}
-            views = {info.views}
-            type = {info.type}
+            key={info.id}
+            image={info.image}
+            title={info.title}
+            author={info.author}
+            views={info.views}
+            type={info.type}
           />
         );
       })}
     </div>
   );
-}
+};
 
 const NewUser = () => {
   const beneficiosHeightImage = "100px";
@@ -59,41 +87,41 @@ const NewUser = () => {
     {
       title: "Aprender nunca fue tan fácil.",
       body: "¡Únete de forma gratuita a esta comunidad que está cambiando el mundo!",
-      image: image1
+      image: image1,
     },
     {
       title: "Aprende a través de videos",
       body: "¡Únete de forma gratuita a esta comunidad que está cambiando el mundo!",
-      image: image2
+      image: image2,
     },
     {
       title: "Sé parte de salas online para el aprendizaje",
       body: "¡Únete de forma gratuita a esta comunidad que está cambiando el mundo!",
-      image: image3
+      image: image3,
     },
     {
       title: "Compra recursos exclusivos",
       body: "¡Únete de forma gratuita a esta comunidad que está cambiando el mundo!",
-      image: image4
-    }
+      image: image4,
+    },
   ];
 
   const esperarData = [
     {
       title: "Educación de calidad accesible",
       body: "Cuenta con contenido valioso a impulsar tus conocimientos.",
-      image: image9
+      image: image9,
     },
     {
       title: "Aprende donde quieras y cuando quieras",
       body: "Cuenta con contenido valioso a impulsar tus conocimientos.",
-      image: image10
+      image: image10,
     },
     {
       title: "Aprende de mentores con experiencia",
       body: "Cuenta con contenido valioso a impulsar tus conocimientos.",
-      image: image11
-    }
+      image: image11,
+    },
   ];
 
   const portada = (
@@ -108,14 +136,12 @@ const NewUser = () => {
         </h4>
         <Button
           className="text-center w-75 buttonPrincipal mt-2"
-          onClick={() => setShowRegister(true)}
-        >
+          onClick={() => setShowRegister(true)}>
           Crea tu cuenta gratis
         </Button>
-        <Button 
+        <Button
           className="text-center w-75 buttonSecondary mt-3 newuse-mb"
-          onClick={() => setShowLogin(true)}
-        >
+          onClick={() => setShowLogin(true)}>
           Suscribete
         </Button>
       </div>
@@ -125,12 +151,16 @@ const NewUser = () => {
 
   const beneficios = (
     <div className="row newuser-beneficios w-100 me-0 ms-0">
-      {beneficiosData.map(beneficio => {
-        return(
+      {beneficiosData.map((beneficio) => {
+        return (
           <div className="col-md-3" key={beneficio.image}>
             <div className="row">
               <div className="col-md-4 text-center">
-                <img src={beneficio.image} alt="Videos" height={beneficiosHeightImage}/>
+                <img
+                  src={beneficio.image}
+                  alt="Videos"
+                  height={beneficiosHeightImage}
+                />
               </div>
               <div className="col-md-8 my-auto">
                 <h4 className="zencluBold">{beneficio.title}</h4>
@@ -148,22 +178,24 @@ const NewUser = () => {
   const videos = (
     <div className="row newuser-videos w-100 me-0 ms-0">
       <div className="text-center">
-        <h1 className="zencluBold newuser-title-videos mb-5">Tenemos estos videos para ti</h1>
-        <Form.Select size="lg" className="mx-auto zencluBold zencluSelect newuser-select">
+        <h1 className="zencluBold newuser-title-videos mb-5">
+          Tenemos estos videos para ti
+        </h1>
+        <Form.Select
+          size="lg"
+          className="mx-auto zencluBold zencluSelect newuser-select">
           <option>Todas las categorías</option>
         </Form.Select>
       </div>
       <div className="row mt-5">
         <div className="col-md-1 my-auto text-end ">
-          <img src={rowImageL} className="newuser-rowImage" alt="izquierda"/>
+          <img src={rowImageL} className="newuser-rowImage" alt="izquierda" />
         </div>
         <div className="col-md-10">
-          <div className="row">
-            {getCards()}
-          </div>
+          <div className="row">{getCards()}</div>
         </div>
         <div className="col-md-1 my-auto text-start">
-          <img src={rowImageR} className="newuser-rowImage" alt="derecha"/>
+          <img src={rowImageR} className="newuser-rowImage" alt="derecha" />
         </div>
       </div>
     </div>
@@ -171,13 +203,19 @@ const NewUser = () => {
 
   const esperar = (
     <div className="row newuser-esperar w-100 me-0 ms-0">
-      <h1 className="text-center zencluBold newuser-title-esperar">¿Qué esperar de Zenclu?</h1>
-      {esperarData.map(esp => {
-        return(
+      <h1 className="text-center zencluBold newuser-title-esperar">
+        ¿Qué esperar de Zenclu?
+      </h1>
+      {esperarData.map((esp) => {
+        return (
           <div className="col-md-4" key={esp.image}>
             <div className="row">
               <div className="col-md-4 text-center">
-                <img src={esp.image} alt="Esperar" height={beneficiosHeightImage}/>
+                <img
+                  src={esp.image}
+                  alt="Esperar"
+                  height={beneficiosHeightImage}
+                />
               </div>
               <div className="col-md-8 my-auto">
                 <h4 className="zencluBold">{esp.title}</h4>
@@ -212,19 +250,19 @@ const NewUser = () => {
     </div>
   );
 
-  return(
+  return (
     <>
-      <div id='app-root'>
-        <Header/>
+      <div id="app-root">
+        <Header />
         {portada}
         {beneficios}
         {videos}
         {esperar}
-        <Footer/>
+        <Footer />
       </div>
       {modals}
     </>
   );
-}
+};
 
 export default NewUser;

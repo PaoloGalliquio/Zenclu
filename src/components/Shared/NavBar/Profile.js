@@ -1,4 +1,4 @@
-import "./NavbarZ.css"
+import "./NavbarZ.css";
 import profileIcon from "../../../assets/Iconos/NavBar/ProfileIcons/Recurso 20.png";
 import editIcon from "../../../assets/Iconos/NavBar/ProfileIcons/Recurso 21.png";
 import suscriptionIcon from "../../../assets/Iconos/NavBar/ProfileIcons/Recurso 10.png";
@@ -15,64 +15,74 @@ const Add = () => {
 
   const options = [
     {
-      name: 'Suscripciones',
+      name: "Suscripciones",
       image: suscriptionIcon,
-      link: '/Suscripciones'
+      link: "/Suscripciones",
     },
     {
-      name: 'Mi contenido',
-      image: contenidoIcon
+      name: "Mi contenido",
+      image: contenidoIcon,
     },
     {
-      name: 'Guardados',
-      image: guardadoIcon
+      name: "Guardados",
+      image: guardadoIcon,
     },
     {
-      name: 'Z Wallet',
+      name: "Z Wallet",
       image: walletIcon,
-      link: '/Zwallet'
+      link: "/Zwallet",
     },
     {
-      name: 'Tienda',
+      name: "Tienda",
       image: tiendaIcon,
-      link: '/Tienda'
+      link: "/Tienda",
     },
     {
-      name: 'Historial',
-      image: historialIcon
-    }
+      name: "Historial",
+      image: historialIcon,
+    },
   ];
 
   const configurations = [
     {
-      name: 'Ayuda',
-      image: ayudaIcon
+      name: "Ayuda",
+      image: ayudaIcon,
     },
     {
-      name: 'Configuración',
-      image: contiguracionIcon
-    }
+      name: "Configuración",
+      image: contiguracionIcon,
+    },
   ];
 
-  return(
+  return (
     <div className="navbar-profile-background zencluCursor fadeIn fast">
       <div className="navbar-profile-triangle"></div>
       <div className="text-center">
-        <img src={profileIcon} alt="Icono de perfil" width={"70px"}/>
-        <img src={editIcon} alt="Editar perfil" width={"25px"} className="navbar-profile-close"/>
+        <img src={profileIcon} alt="Icono de perfil" width={"70px"} />
+        <img
+          src={editIcon}
+          alt="Editar perfil"
+          width={"25px"}
+          className="navbar-profile-close"
+        />
       </div>
       <h6 className="text-center zencluBold mt-2">Ernesto Rodrigo</h6>
       <p className="text-center zencluLink">Ver todo</p>
       <div className="navbar-division"></div>
-      {options.map(option => {
-        return(
+      {options.map((option) => {
+        return (
           <div className="row mb-2" key={option.name}>
-            {option.link ? 
+            {option.link ? (
               <>
                 <div className="col-md-3">
                   <a href={option.link}>
-                    <img src={option.image} alt={option.name} width={optionImgWidth} className="navbar-profile-image"/>
-                  </a> 
+                    <img
+                      src={option.image}
+                      alt={option.name}
+                      width={optionImgWidth}
+                      className="navbar-profile-image"
+                    />
+                  </a>
                 </div>
                 <div className="col-md-9 my-auto ps-3">
                   <a href={option.link}>
@@ -80,42 +90,50 @@ const Add = () => {
                   </a>
                 </div>
               </>
-              :
+            ) : (
               <>
                 <div className="col-md-3">
-                  <img src={option.image} alt={option.name} width={optionImgWidth} className="navbar-profile-image"/>
+                  <img
+                    src={option.image}
+                    alt={option.name}
+                    width={optionImgWidth}
+                    className="navbar-profile-image"
+                  />
                 </div>
                 <div className="col-md-9 my-auto ps-3">
                   <div className="p-0">{option.name}</div>
                 </div>
               </>
-            }
+            )}
           </div>
-        )
+        );
       })}
       <div className="navbar-division"></div>
-      {configurations.map(configuration => {
-        return(
+      {configurations.map((configuration) => {
+        return (
           <div className="row mb-2" key={configuration.name}>
             <div className="col-md-3">
-              <img src={configuration.image} alt={configuration.name} width={optionImgWidth} className="navbar-profile-image"/>
+              <img
+                src={configuration.image}
+                alt={configuration.name}
+                width={optionImgWidth}
+                className="navbar-profile-image"
+              />
             </div>
             <div className="col-md-9 my-auto ps-4">
               <div className="p-0">{configuration.name}</div>
             </div>
           </div>
-        )
+        );
       })}
       <div className="navbar-division"></div>
       <div className="text-center">
         <p className="zencluLink">
-          <a href="/">
-            Cerrar sesión
-          </a>
+          <a href="/">Cerrar sesión</a>
         </p>
       </div>
     </div>
   );
-}
+};
 
 export default Add;

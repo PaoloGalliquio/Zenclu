@@ -29,8 +29,7 @@ const Ingresar = (props) => {
             <img src={FacebookIcon} height="25" className="login-icon" />
             <Button
               variant="light"
-              className="text-center mb-3 modalWidth bg-white"
-            >
+              className="text-center mb-3 modalWidth bg-white">
               Continúa con Facebook
             </Button>
           </div>
@@ -38,8 +37,7 @@ const Ingresar = (props) => {
             <img src={GoogleIcon} height="25" className="login-icon" />
             <Button
               variant="light"
-              className="text-center mb-3 modalWidth bg-white"
-            >
+              className="text-center mb-3 modalWidth bg-white">
               Continúa con Google
             </Button>
           </div>
@@ -58,9 +56,10 @@ const Ingresar = (props) => {
             ¿Olvidaste tu contraseña?
           </a>
           <div className="text-center mb-3">
-            <Button variant="primary" className="text-center w-50 modalButton"
-              onClick={() => window.location.href = "/Home"}  
-            >
+            <Button
+              variant="primary"
+              className="text-center w-50 modalButton"
+              onClick={() => (window.location.href = "/Home")}>
               Iniciar sesión
             </Button>
           </div>
@@ -71,8 +70,7 @@ const Ingresar = (props) => {
               onClick={() => {
                 props.register(true);
                 props.login(false);
-              }}
-            >
+              }}>
               {" "}
               Regístrate
             </b>

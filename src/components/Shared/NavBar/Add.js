@@ -1,4 +1,4 @@
-import "./NavbarZ.css"
+import "./NavbarZ.css";
 import image1 from "../../../assets/Iconos/NavBar/AddIcons/VideoIcon.png";
 import image2 from "../../../assets/Iconos/NavBar/AddIcons/CalendarIcon.png";
 import image3 from "../../../assets/Iconos/NavBar/AddIcons/ShakeIcon.png";
@@ -8,34 +8,38 @@ const Add = () => {
 
   const options = [
     {
-      name: 'Video',
-      message: 'Sube un video',
+      name: "Video",
+      message: "Sube un video",
       image: image1,
-      last: false
+      last: false,
     },
     {
-      name: 'Sala',
-      message: 'Agenda una sala',
+      name: "Sala",
+      message: "Agenda una sala",
       image: image2,
-      last: false
+      last: false,
     },
     {
-      name: 'Vende',
-      message: 'Vende',
+      name: "Vende",
+      message: "Vende",
       image: image3,
-      last: true
-    }
+      last: true,
+    },
   ];
 
-  return(
+  return (
     <div className="navbar-background fadeIn fast">
       <div className="navbar-triangle"></div>
-      {options.map(option => {
-        return(
+      {options.map((option) => {
+        return (
           <div key={option.name}>
             <div className="row">
               <div className="col-md-3">
-                <img src={option.image} alt={option.name} width={optionImgWidth}/>
+                <img
+                  src={option.image}
+                  alt={option.name}
+                  width={optionImgWidth}
+                />
               </div>
               <div className="col-md-9 my-auto ps-4">
                 <div className="row zencluBold">
@@ -46,12 +50,16 @@ const Add = () => {
                 </div>
               </div>
             </div>
-            {option.last ? <div className="pb-3"></div> : <div className="navbar-division"></div>}
+            {option.last ? (
+              <div className="pb-3"></div>
+            ) : (
+              <div className="navbar-division"></div>
+            )}
           </div>
-        )
+        );
       })}
     </div>
   );
-}
+};
 
 export default Add;
