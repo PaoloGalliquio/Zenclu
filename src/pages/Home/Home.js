@@ -24,7 +24,7 @@ const Home = () => {
     {
       id: 1,
       image: image1,
-      title: "The science behind microchips",
+      title: "The Science Behind Microchips",
       author: "Wired Creator",
       views: "2,2k",
       type: "Video",
@@ -127,16 +127,15 @@ const Home = () => {
       <div className="col-md-10">
         <div className="text-white home-title">
           <div className="home-title-principal">
-            <h1>
-              <b>¡Hola!</b>
+            <h1 className="zencluBold">¡Hola!</h1>
+            <h1 className="zencluBold">
+              Bienvenido Marcus ¿listo para aprender?
             </h1>
-            <h1>
-              <b>Bienvenido Marcus ¿listo para aprender?</b>
-            </h1>
-            <h4>Echa una mirada a los cursos y videos que tenemos para ti.</h4>
+            <h3>Echa una mirada a los cursos y videos que tenemos para ti.</h3>
           </div>
           <h3 className="mb-4">
-            <b>Suscripciones</b> | Ver todo
+            <div className="me-5 d-inline">Suscripciones</div>
+            <div className="d-inline">| Ver todo</div>
           </h3>
         </div>
         <div className="row mx-auto pb-5">
@@ -165,9 +164,7 @@ const Home = () => {
       </div>
       <div className="col-md-10">
         <div className="row text-black trending mx-auto">
-          <h3 className="mb-4">
-            <b>Tendencias de la semana</b>
-          </h3>
+          <h3 className="mb-4">Tendencias de la semana</h3>
           <div className="mb-5">
             <div className="row">
               {trendsData.map((trend) => {

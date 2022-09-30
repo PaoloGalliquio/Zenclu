@@ -8,7 +8,7 @@ const Informacion2 = (props) => {
   return (
     <>
       <div className="modalBar">
-        <img src={Logo} className="imageBanner" />
+        <img src={Logo} className="imageBanner" alt="Logo" />
       </div>
       <div className="text-center modalBackground fadeIn fast">
         <div className="row modalContainerInfo">
@@ -17,6 +17,7 @@ const Informacion2 = (props) => {
               src={CloseIcon}
               height="25"
               className="close-icon-info"
+              alt="Cerrar"
               onClick={() => {
                 document.getElementById("app-root").style.filter = "blur(0px)";
                 props.info(false);
@@ -39,7 +40,11 @@ const Informacion2 = (props) => {
           <div className="row">
             <div className="col-md-2 my-auto">Busca aquí:</div>
             <div className="col-md-8 pt-2 container-icon">
-              <img src={DropdownIcon} className="dropdown-icon" />
+              <img
+                src={DropdownIcon}
+                className="dropdown-icon"
+                alt="Seleccionar"
+              />
               <Form.Control
                 type="text"
                 placeholder=""

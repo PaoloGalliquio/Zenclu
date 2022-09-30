@@ -46,7 +46,7 @@ a, a:visited, a:hover{
 .zencluLink{
   color: #1893ff;
   cursor: pointer;
-  font-weight: 800;
+  font-weight: 500;
 }
 
 .zencluInput{
@@ -66,7 +66,7 @@ a, a:visited, a:hover{
 }
 
 .zencluBold{
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .zencluMuted{

@@ -7,8 +7,6 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Footer = () => {
-  const iconHeight = 40;
-
   const buscador = (
     <div className="col-md-6 ">
       <div className="row footer-part1">

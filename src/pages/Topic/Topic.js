@@ -70,7 +70,7 @@ const Topic = () => {
     {
       id: 3,
       photo: tendencyProduct4,
-      title: "Hoodie signature por Zendex",
+      title: "Hoodie signature hecha por Zendex",
       sellerName: "Zendex Arts",
       sellerPhoto: creatorPhoto4,
       priceDiscount: "S/199,90",

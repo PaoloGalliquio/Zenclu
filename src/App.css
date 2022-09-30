@@ -14,10 +14,11 @@
 }
 
 body{
-  font-family: 'Maven Pro', sans-serif;
+  font-family: 'Maven Pro';
   position: relative;
   padding-bottom: 210px;
   min-height: 100vh;
+  font-weight: 400;
 }
 
 h1{
@@ -41,7 +42,7 @@ h5{
 }
 
 h6{
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .greencolor{
@@ -50,9 +51,21 @@ h6{
   border: none;
 }
 
+.greencolor:hover{
+  color: #4D4D4D;
+  background-color: #83c28d;
+  border: none;
+}
+
 .bluecolor{
   color: white;
   background-color: #29ABE2;
+  border: none;
+}
+
+.bluecolor:hover{
+  color: white;
+  background-color: #2199cc;
   border: none;
 }
 
@@ -107,11 +120,12 @@ h6{
 
 .tabtab{
   width: 26.6%;
+  background-color: #ededed;
 }
 
 .tab{
   border: none;
-  background-color: #f2f2e9;
+  background-color: #ededed;
 }
 
 .modalBar{

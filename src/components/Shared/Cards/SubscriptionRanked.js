@@ -24,9 +24,7 @@ const SubscriptionRanked = (props) => {
               />
             </div>
             <div className="col-md-9 ps-0">
-              <h5>
-                <b>{props.title}</b>
-              </h5>
+              <h5>{props.title}</h5>
               <h6>{props.creator}</h6>
               <Rating name="read-only" value={props.raking} readOnly />
               <h5 className="zencluBold">S/ {props.price}</h5>

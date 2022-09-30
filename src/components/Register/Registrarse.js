@@ -9,7 +9,7 @@ const Registrarse = (props) => {
   return (
     <>
       <div className="modalBar">
-        <img src={Logo} className="imageBanner" />
+        <img src={Logo} className="imageBanner" alt="Logo Zenclu" />
       </div>
       <div className="text-center modalBackground fadeIn fast">
         <div className="row modalContainer">
@@ -18,6 +18,7 @@ const Registrarse = (props) => {
               src={CloseIcon}
               height="25"
               className="close-icon"
+              alt="Cerrar"
               onClick={() => {
                 document.getElementById("app-root").style.filter = "blur(0px)";
                 props.register(false);
@@ -26,7 +27,12 @@ const Registrarse = (props) => {
             <h5 className="mb-5">Regístrate</h5>
           </div>
           <div className="container-icon">
-            <img src={FacebookIcon} height="25" className="login-icon" />
+            <img
+              src={FacebookIcon}
+              height="25"
+              className="login-icon"
+              alt="Facebook"
+            />
             <Button
               variant="light"
               className="text-center mb-3 modalWidth bg-white">
@@ -34,7 +40,12 @@ const Registrarse = (props) => {
             </Button>
           </div>
           <div className="container-icon">
-            <img src={GoogleIcon} height="25" className="login-icon" />
+            <img
+              src={GoogleIcon}
+              height="25"
+              className="login-icon"
+              alt="Google"
+            />
             <Button
               variant="light"
               className="text-center mb-3 modalWidth bg-white">

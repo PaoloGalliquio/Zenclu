@@ -4,7 +4,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <div className="header-background">
-      <img src={Logo} className="header-image" />
+      <img src={Logo} className="header-image" alt="Logo Zenclu" />
     </div>
   );
 };

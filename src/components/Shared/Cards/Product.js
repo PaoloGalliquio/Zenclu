@@ -23,12 +23,10 @@ const Product = (props) => {
               />
             </div>
             <div className="col-md-9 ps-0">
-              <h5 className="mb-0">
-                <b>{props.title}</b>
-              </h5>
+              <h5 className="mb-0">{props.title}</h5>
               <h6 className="mb-1">{props.sellerName}</h6>
               <h5>
-                <b>{props.priceDiscount} &nbsp;</b>
+                {props.priceDiscount} &nbsp;
                 <span className="text-decoration-line-through">
                   {props.price}
                 </span>
@@ -41,7 +39,7 @@ const Product = (props) => {
                 className="btn "
                 style={{ backgroundColor: "rgb(133, 221, 149)" }}>
                 {" "}
-                <b> Agregar al carrito </b>{" "}
+                Agregar al carrito{" "}
               </button>
             </div>
             <div className="d-grid gap-1">

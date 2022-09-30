@@ -8,7 +8,7 @@ const Informacion1 = (props) => {
   return (
     <>
       <div className="modalBar">
-        <img src={Logo} className="imageBanner" />
+        <img src={Logo} className="imageBanner" alt="Logo" />
       </div>
       <div className="text-center modalBackground fadeIn fast">
         <div className="row modalContainerInfo">
@@ -17,6 +17,7 @@ const Informacion1 = (props) => {
               src={CloseIcon}
               height="25"
               className="close-icon-info"
+              alt="Cerrar"
               onClick={() => {
                 document.getElementById("app-root").style.filter = "blur(0px)";
                 props.info1(false);
@@ -55,7 +56,12 @@ const Informacion1 = (props) => {
           <div className="row">
             <div className="col-md-6">
               <div className="container-icon">
-                <img src={calendarIcon} height="25" className="calendar-icon" />
+                <img
+                  src={calendarIcon}
+                  height="25"
+                  className="calendar-icon"
+                  alt="Calendario"
+                />
                 <Form.Control
                   type="text"
                   placeholder="Fecha de nacimiento"
