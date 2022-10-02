@@ -12,7 +12,7 @@ const typeInfo = (type) => {
 const SubscriptionView = (props) => {
   return (
     <div className="col ps-2 pe-2" key={props.id}>
-      <Card className="ps-2 pe-2 pt-0 border-0">
+      <Card className="ps-2 pe-2 pt-0 border-0 zencluShadow">
         <Card.Img
           className="mt-2"
           variant="top"

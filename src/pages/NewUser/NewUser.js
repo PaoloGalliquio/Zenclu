@@ -18,9 +18,8 @@ import image8 from "../../assets/fotos/Recurso 11.png";
 import image9 from "../../assets/Iconos/Recurso 21.png";
 import image10 from "../../assets/Iconos/Recurso 22.png";
 import image11 from "../../assets/Iconos/Recurso 23.png";
-import rowImageL from "../../assets/Iconos/Recurso 54.png";
-import rowImageR from "../../assets/Iconos/Recurso 53.png";
 import SubscriptionView from "../../components/Shared/Cards/SubscriptionView";
+import Carousel from "../../components/Carousel/Carousel";
 
 const getCards = () => {
   const cardInfo = [
@@ -175,28 +174,31 @@ const NewUser = () => {
     </div>
   );
 
-  const videos = (
-    <div className="row newuser-videos w-100 me-0 ms-0">
-      <div className="text-center">
-        <h1 className="zencluBold newuser-title-videos mb-5">
-          Tenemos estos videos para ti
-        </h1>
-        <Form.Select
-          size="lg"
-          className="mx-auto zencluBold zencluSelect newuser-select">
-          <option>Todas las categorías</option>
-        </Form.Select>
-      </div>
-      <div className="row mt-5">
-        <div className="col-md-1 my-auto text-end ">
-          <img src={rowImageL} className="newuser-rowImage" alt="izquierda" />
+  const videosHeader = (
+    <>
+      <div className="row newuser-videos w-100 me-0 ms-0 pb-0">
+        <div className="text-center">
+          <h1 className="zencluBold newuser-title-videos mb-5">
+            Tenemos estos videos para ti
+          </h1>
+          <Form.Select
+            size="lg"
+            className="mx-auto zencluBold zencluSelect newuser-select">
+            <option>Todas las categorías</option>
+          </Form.Select>
         </div>
+      </div>
+    </>
+  );
+
+  const videos = (
+    <div className="row newuser-videos w-100 me-0 ms-0 pt-5">
+      <div className="row mt-0">
+        <div className="col-md-1 my-auto text-end "></div>
         <div className="col-md-10">
           <div className="row">{getCards()}</div>
         </div>
-        <div className="col-md-1 my-auto text-start">
-          <img src={rowImageR} className="newuser-rowImage" alt="derecha" />
-        </div>
+        <div className="col-md-1 my-auto text-start"></div>
       </div>
     </div>
   );
@@ -256,7 +258,14 @@ const NewUser = () => {
         <Header />
         {portada}
         {beneficios}
-        {videos}
+        {videosHeader}
+        <Carousel
+          items={[
+            { id: 1, content: videos },
+            { id: 2, content: videos },
+            { id: 3, content: videos },
+          ]}
+        />
         {esperar}
         <Footer />
       </div>

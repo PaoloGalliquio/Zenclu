@@ -141,7 +141,7 @@ const Topic = () => {
         <button
           className="btn pt-3 pb-3 ps-5 topic-categorias-dropdown"
           type="button">
-          <b>Todas las categorías</b>
+          Todas las categorías
           <ArrowBackIosNewIcon className="topic-drowdown-icon" />
         </button>
       </div>

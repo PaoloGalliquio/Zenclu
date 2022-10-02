@@ -1,0 +1,16 @@
+.carousel-control-prev-icon {
+  margin-left: -40px;
+  background-image: url("../../assets/Iconos/Recurso 54.png") !important;
+}
+
+.carousel-control-next-icon {
+  margin-right: -40px;
+  background-image: url("../../assets/Iconos/Recurso 53.png") !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 1.2vw;
+  height: 2vw;
+}
+

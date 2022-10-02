@@ -13,11 +13,10 @@ import image9 from "../../assets/fotos/Recurso 46.png";
 import image10 from "../../assets/fotos/Recurso 45.png";
 import image11 from "../../assets/fotos/Recurso 44.png";
 import image12 from "../../assets/fotos/Recurso 43.png";
-import leftArrow from "../../assets/Iconos/Recurso 54.png";
-import rightArrow from "../../assets/Iconos/Recurso 53.png";
 import SubscriptionView from "../../components/Shared/Cards/SubscriptionView";
 import SubscriptionSubscribe from "../../components/Shared/Cards/SubscriptionSubscribe";
 import Creator from "../../components/Shared/Cards/Creator";
+import Carousel from "../../components/Carousel/Carousel";
 
 const Home = () => {
   const subscriptionsData = [
@@ -159,9 +158,7 @@ const Home = () => {
 
   const tendencias = (
     <div className="row mt-5 w-100 m-0">
-      <div className="col-md-1 my-auto text-end">
-        <img src={leftArrow} alt="izquierda" />
-      </div>
+      <div className="col-md-1 my-auto text-end"></div>
       <div className="col-md-10">
         <div className="row text-black trending mx-auto">
           <h3 className="mb-4">Tendencias de la semana</h3>
@@ -184,40 +181,41 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="col-md-1 my-auto">
-        <img src={rightArrow} alt="derecha" />
-      </div>
+      <div className="col-md-1 my-auto"></div>
     </div>
+  );
+
+  const creatorsHeader = (
+    <>
+      <div className="row top-creators w-100 m-0 mt-4 pt-4">
+        <div className="col-md-1 my-auto text-end"></div>
+        <div className="col-md-10">
+          <div className="row mt-3">
+            <div className="tabtabO"></div>
+            <button className="tabtab text-center tabActive">
+              <h3 className="mb-4">Top creadores</h3>
+            </button>
+            <button className="tabtab text-center tab">
+              <h3 className="mb-4 disabled">Recomendados</h3>
+            </button>
+            <button className="tabtab text-center tab">
+              <h3 className="mb-4 disabled">Descubrir</h3>
+            </button>
+            <div className="tabtabO"></div>
+            <span className="lineaGradiente"></span>
+          </div>
+        </div>
+        <div className="col-md-1 my-auto"></div>
+      </div>
+    </>
   );
 
   const creators = (
     <>
-      <div className="row top-creators w-100 m-0 mt-4 pt-4">
-        <div className="col-md-1 my-auto text-end">
-          <img src={leftArrow} alt="izquierda" />
-        </div>
+      <div className="row top-creators w-100 m-0 mt-0 pt-1">
+        <div className="col-md-1 my-auto text-end"></div>
         <div className="col-md-10">
           <div className="row text-black trending mx-auto">
-            <div className="row mt-3">
-              <div className="tabtabO"></div>
-              <button className="tabtab text-center tabActive">
-                <h3 className="mb-4">
-                  <b>Top creadores</b>
-                </h3>
-              </button>
-              <button className="tabtab text-center tab">
-                <h3 className="mb-4 disabled">
-                  <b>Recomendados</b>
-                </h3>
-              </button>
-              <button className="tabtab text-center tab">
-                <h3 className="mb-4 disabled">
-                  <b>Descubrir</b>
-                </h3>
-              </button>
-              <div className="tabtabO"></div>
-            </div>
-            <span className="lineaGradiente"></span>
             <div className="row mt-4">
               <div className="text-black mb-5">
                 <div className="row">
@@ -236,9 +234,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-1 my-auto">
-          <img src={rightArrow} alt="derecha" />
-        </div>
+        <div className="col-md-1 my-auto"></div>
       </div>
     </>
   );
@@ -247,8 +243,21 @@ const Home = () => {
     <>
       <NavbarZ />
       {title}
-      {tendencias}
-      {creators}
+      <Carousel
+        items={[
+          { id: 1, content: tendencias },
+          { id: 2, content: tendencias },
+          { id: 3, content: tendencias },
+        ]}
+      />
+      {creatorsHeader}
+      <Carousel
+        items={[
+          { id: 1, content: creators },
+          { id: 2, content: creators },
+          { id: 3, content: creators },
+        ]}
+      />
       <Footer />
     </>
   );

@@ -6,8 +6,6 @@ import Product from "../../components/Shared/Cards/Product";
 import StoreIcon from "../../assets/Iconos/Store/Recurso 14.png";
 import CartIcon from "../../assets/Iconos/Store/Recurso 1.png";
 import HeaderTitle from "../../components/Shared/HeaderTitle/HeaderTitle";
-import rowImageL from "../../assets/Iconos/Recurso 54.png";
-import rowImageR from "../../assets/Iconos/Recurso 53.png";
 
 import tendencyProduct1 from "../../assets/fotos/Store/Recurso 48.png";
 import tendencyProduct2 from "../../assets/fotos/Store/Recurso 47.png";
@@ -23,6 +21,7 @@ import creatorPhoto1 from "../../assets/fotos/Store/Recurso 52.png";
 import creatorPhoto2 from "../../assets/fotos/Store/Recurso 50.png";
 import creatorPhoto3 from "../../assets/fotos/Store/Recurso 49.png";
 import creatorPhoto4 from "../../assets/fotos/Store/Recurso 50.png";
+import Carousel from "../../components/Carousel/Carousel";
 
 const Store = () => {
   const shoppingCartSize = "150px";
@@ -104,9 +103,9 @@ const Store = () => {
     },
   ];
 
-  const tendenciaPantalla = (
+  const tendenciaHeader = (
     <>
-      <div className="store-tendencia pb-5">
+      <div className="store-tendencia pb-0 mb-0">
         <img
           src={CartIcon}
           alt="Carrito de compras"
@@ -120,10 +119,15 @@ const Store = () => {
             <h4 className="zencluBold ps-3">Es tendencia</h4>
           </div>
         </div>
+      </div>
+    </>
+  );
+
+  const tendenciaPantalla = (
+    <>
+      <div className="store-tendencia pb-5 mt-0 pt-0">
         <div className="row ms-0 me-0">
-          <div className="col-md-1 my-auto text-center zencluPointer">
-            <img src={rowImageL} className="newuser-rowImage" alt="izquierda" />
-          </div>
+          <div className="col-md-1 my-auto text-center"></div>
           <div className="col-md-10">
             <div className="row">
               {productosTendencia.map((productoTendencia) => {
@@ -141,9 +145,7 @@ const Store = () => {
               })}
             </div>
           </div>
-          <div className="col-md-1 my-auto text-center zencluPointer">
-            <img src={rowImageR} className="newuser-rowImage" alt="derecha" />
-          </div>
+          <div className="col-md-1 my-auto text-center"></div>
         </div>
       </div>
     </>
@@ -161,7 +163,7 @@ const Store = () => {
             <button
               className="btn pt-2 pb-2 ps-5 store-categorias-dropdown"
               type="button">
-              <b>Todas las categorías</b>
+              Todas las categorías
               <ArrowBackIosNewIcon className="store-drowdown-icon" />
             </button>
           </div>
@@ -169,7 +171,7 @@ const Store = () => {
             <button
               className="btn pt-2 pb-2 ps-5 store-precio-dropdown"
               type="button">
-              <b>Precio más bajo</b>
+              Precio más bajo
               <ArrowBackIosNewIcon className="store-drowdown-icon" />
             </button>
           </div>
@@ -204,7 +206,14 @@ const Store = () => {
     <>
       <NavbarZ />
       <HeaderTitle image={StoreIcon} title="Tienda" />
-      {tendenciaPantalla}
+      {tendenciaHeader}
+      <Carousel
+        items={[
+          { id: 1, content: tendenciaPantalla },
+          { id: 2, content: tendenciaPantalla },
+          { id: 3, content: tendenciaPantalla },
+        ]}
+      />
       {productosPantalla}
       <Footer />
     </>
