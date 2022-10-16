@@ -21,11 +21,11 @@ import creatorPhoto1 from "../../assets/fotos/Store/Recurso 52.png";
 import creatorPhoto2 from "../../assets/fotos/Store/Recurso 50.png";
 import creatorPhoto3 from "../../assets/fotos/Store/Recurso 49.png";
 import creatorPhoto4 from "../../assets/fotos/Store/Recurso 50.png";
-import Carousel from "../../components/Carousel/Carousel";
+import CarouselZ from "../../components/Shared/Carousel/Carousel";
 
 const Store = () => {
   const shoppingCartSize = "150px";
-  const productosTendencia = [
+  const productosTendenciaData = [
     {
       id: 0,
       photo: tendencyProduct1,
@@ -64,7 +64,7 @@ const Store = () => {
     },
   ];
 
-  const productos = [
+  const productosData = [
     {
       id: 0,
       photo: product1,
@@ -130,7 +130,7 @@ const Store = () => {
           <div className="col-md-1 my-auto text-center"></div>
           <div className="col-md-10">
             <div className="row">
-              {productosTendencia.map((productoTendencia) => {
+              {productosTendenciaData.map((productoTendencia) => {
                 return (
                   <Product
                     id={productoTendencia.id}
@@ -181,7 +181,7 @@ const Store = () => {
           <div className="col-md-1 my-auto text-center zencluPointer"></div>
           <div className="col-md-10">
             <div className="row">
-              {productos.map((producto) => {
+              {productosData.map((producto) => {
                 return (
                   <Product
                     id={producto.id}
@@ -207,7 +207,7 @@ const Store = () => {
       <NavbarZ />
       <HeaderTitle image={StoreIcon} title="Tienda" />
       {tendenciaHeader}
-      <Carousel
+      <CarouselZ
         items={[
           { id: 1, content: tendenciaPantalla },
           { id: 2, content: tendenciaPantalla },

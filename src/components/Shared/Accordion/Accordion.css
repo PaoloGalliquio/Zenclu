@@ -1,0 +1,42 @@
+.accordion-number{
+  width: 55px;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.accordion-question{
+  font-size: 18px;
+}
+
+.accordion-answer{
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.accordion-item{
+  border-radius: 20px !important;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.accordion-collapse{
+  background-color: #EBEBEB !important;
+  border-radius: 0px 0px 20px 20px !important;
+  margin-top: -20px;
+  padding-top: 20px;
+}
+
+.accordion-button{
+  border: 1px solid lightgray !important;
+  border-radius: 20px !important;
+  background-color: white !important;
+  color: black !important;
+  box-shadow: none !important;
+  overflow: hidden;
+}
+
+.accordion-header{
+  background-color: #EBEBEB !important;
+  border-radius: 20px !important;
+}

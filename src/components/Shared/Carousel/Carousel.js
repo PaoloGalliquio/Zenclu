@@ -3,7 +3,7 @@ import "./Carousel.css";
 
 const CarouselZ = (props) => {
   return (
-    <Carousel>
+    <Carousel indicators={false}>
       {props.items.map((item) => {
         return <Carousel.Item key={item.id}>{item.content}</Carousel.Item>;
       })}

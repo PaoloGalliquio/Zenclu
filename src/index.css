@@ -69,12 +69,12 @@ a, a:visited, a:hover{
   font-weight: 600;
 }
 
-.zencluMuted{
-  color: rgb(130, 130, 130);
+.zencluMedium{
+  font-weight: 500;
 }
 
-.zencluSemiBold{
-  font-weight: 600;
+.zencluMuted{
+  color: rgb(130, 130, 130);
 }
 
 .zencluButton{

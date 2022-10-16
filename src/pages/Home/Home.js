@@ -16,7 +16,7 @@ import image12 from "../../assets/fotos/Recurso 43.png";
 import SubscriptionView from "../../components/Shared/Cards/SubscriptionView";
 import SubscriptionSubscribe from "../../components/Shared/Cards/SubscriptionSubscribe";
 import Creator from "../../components/Shared/Cards/Creator";
-import Carousel from "../../components/Carousel/Carousel";
+import CarouselZ from "../../components/Shared/Carousel/Carousel";
 
 const Home = () => {
   const subscriptionsData = [
@@ -243,7 +243,7 @@ const Home = () => {
     <>
       <NavbarZ />
       {title}
-      <Carousel
+      <CarouselZ
         items={[
           { id: 1, content: tendencias },
           { id: 2, content: tendencias },
@@ -251,7 +251,7 @@ const Home = () => {
         ]}
       />
       {creatorsHeader}
-      <Carousel
+      <CarouselZ
         items={[
           { id: 1, content: creators },
           { id: 2, content: creators },

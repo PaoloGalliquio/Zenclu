@@ -19,7 +19,7 @@ import image9 from "../../assets/Iconos/Recurso 21.png";
 import image10 from "../../assets/Iconos/Recurso 22.png";
 import image11 from "../../assets/Iconos/Recurso 23.png";
 import SubscriptionView from "../../components/Shared/Cards/SubscriptionView";
-import Carousel from "../../components/Carousel/Carousel";
+import CarouselZ from "../../components/Shared/Carousel/Carousel";
 
 const getCards = () => {
   const cardInfo = [
@@ -259,7 +259,7 @@ const NewUser = () => {
         {portada}
         {beneficios}
         {videosHeader}
-        <Carousel
+        <CarouselZ
           items={[
             { id: 1, content: videos },
             { id: 2, content: videos },

@@ -1,0 +1,25 @@
+.helpCenter-text{
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.helpCenter-questions{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.helpCenter-button{
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: #0086FA;
+  padding: 10px 80px 10px 80px;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(90deg) !important;
+}
+
+.accordion-button::after{
+  background-image: url("../../assets/Iconos/Arrow.svg") !important;
+  background-size: contain !important;
+}

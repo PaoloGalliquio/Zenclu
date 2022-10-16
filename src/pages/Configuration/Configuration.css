@@ -1,0 +1,65 @@
+.configuration-subtitle{
+  font-size: 22px;
+}
+
+.configuration-text{
+  font-size: 19px;
+}
+
+.configuration-subtext{
+  font-size: 17px;
+}
+
+.configuration-input{
+  font-size: 17px;
+  width: 25%;
+  padding: 12px 20px 12px 20px;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+}
+
+.configuration-button{
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 10px 80px 10px 80px;
+}
+
+.configuration-connectAccounts{
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  width: 75%;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.configuration-card{
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  max-height: 80px;
+  width: 25%;
+  padding: 20px;
+}
+
+.configuration-agregarMetodo{
+  max-width: 70px;
+}
+
+.form-check-input{
+  box-shadow: none !important;
+}
+
+.form-check-input:checked{
+  background-color: white !important;
+  border: 2px solid #9FDCA8 !important;
+}
+
+.form-switch .form-check-input:checked{
+  background-image: url("../../assets/Iconos/Configuration/Recurso\ 3.svg") !important;
+}
+
+.form-switch .form-check-input {
+  width: 60px !important;
+  height: 40px !important;
+  border: 2px solid #B3B3B3;
+  background-image: url("../../assets/Iconos/Configuration/Recurso\ 5.svg") !important;
+}

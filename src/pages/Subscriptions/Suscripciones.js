@@ -20,7 +20,7 @@ import SubscriptionRanked from "../../components/Shared/Cards/SubscriptionRanked
 const Suscripciones = () => {
   const creatorPhotoWidth = "200px";
 
-  const creators = [
+  const creatorsData = [
     {
       id: 0,
       name: "InConcrete",
@@ -50,12 +50,12 @@ const Suscripciones = () => {
 
   const tabs = [
     {
-      name: "Videos suscritos",
-      active: true,
+      id: 1,
+      name: "Videos suscritos"
     },
     {
-      name: "Mis videos",
-      active: false,
+      id: 2,
+      name: "Mis videos"
     },
   ];
 
@@ -116,7 +116,7 @@ const Suscripciones = () => {
         </div>
         <div className="col-md-10">
           <div className="row">
-            {creators.map((creator) => {
+            {creatorsData.map((creator) => {
               return (
                 <div
                   className="col subscripciones-creator-card"
@@ -153,7 +153,7 @@ const Suscripciones = () => {
   const videosSuscritos = (
     <div className="suscripciones-videos">
       <div className="pb-5">
-        <TabSelector tabs={tabs} haveImage={false} />
+        <TabSelector tabs={tabs} haveImage={false} padding={"30%"} selected={1}/>
       </div>
       <div className="row ms-0 me-0 sus-videos-cards">
         {videos.map((video) => {

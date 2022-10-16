@@ -1,0 +1,20 @@
+.history-container{
+  padding-left: 14%;
+  padding-right: 14%;
+  margin-bottom: 3%;
+}
+
+.history-search{
+  width: 750px;
+  height: 60px;
+  border-radius: 20px;
+  border: none;
+  background-color: #EBEBEB;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+}
+
+.history-search:focus{
+  outline: none;
+}

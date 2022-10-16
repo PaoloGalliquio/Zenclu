@@ -10,14 +10,14 @@ import ZPoints from "../../assets/Iconos/ZWallet/Recurso 34.png";
 const Zwalet = () => {
   const tabs = [
     {
+      id: 1,
       name: "ZCoins",
-      image: ZCoinsIcon,
-      active: true,
+      image: ZCoinsIcon
     },
     {
+      id: 2,
       name: "ZPoints",
-      image: ZPoints,
-      active: false,
+      image: ZPoints
     },
   ];
 
@@ -25,7 +25,7 @@ const Zwalet = () => {
     <>
       <NavbarZ />
       <HeaderTitle image={ZWalletIcon} title="ZWallet" />
-      <TabSelector tabs={tabs} haveImage={true} />
+      <TabSelector tabs={tabs} haveImage={true} padding={"30%"}  selected={1}/>
       <div className="row w-100 text-center">
         <h5 className="mt-3 wallet-total zencluBold">Total actual</h5>
         <h1 className="zencluBold">2,763</h1>

@@ -26,16 +26,16 @@ import SubscriptionRanked from "../../components/Shared/Cards/SubscriptionRanked
 const Topic = () => {
   const tabs = [
     {
-      name: "Productos",
-      active: true,
+      id: 1,
+      name: "Productos"
     },
     {
-      name: "Lives",
-      active: false,
+      id: 2,
+      name: "Lives"
     },
     {
-      name: "Videos",
-      active: false,
+      id: 3,
+      name: "Videos"
     },
   ];
 
@@ -196,7 +196,7 @@ const Topic = () => {
       <NavbarZ />
       {titulo}
       {tendenciaPantalla}
-      <TabSelector tabs={tabs} haveImage={false} />
+      <TabSelector tabs={tabs} haveImage={false} padding={"25%"} selected={1}/>
       {productosPantalla}
       <Footer />
     </>

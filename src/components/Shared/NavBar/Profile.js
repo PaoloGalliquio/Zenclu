@@ -40,6 +40,7 @@ const Add = () => {
     {
       name: "Historial",
       image: historialIcon,
+      link: "/History",
     },
   ];
 
@@ -47,10 +48,12 @@ const Add = () => {
     {
       name: "Ayuda",
       image: ayudaIcon,
+      link: "/HelpCenter",
     },
     {
       name: "Configuración",
       image: contiguracionIcon,
+      link: "/Configuration",
     },
   ];
 
@@ -112,17 +115,39 @@ const Add = () => {
       {configurations.map((configuration) => {
         return (
           <div className="row mb-2" key={configuration.name}>
-            <div className="col-md-3">
-              <img
-                src={configuration.image}
-                alt={configuration.name}
-                width={optionImgWidth}
-                className="navbar-profile-image"
-              />
-            </div>
-            <div className="col-md-9 my-auto ps-4">
-              <div className="p-0">{configuration.name}</div>
-            </div>
+            {configuration.link ? (
+              <>
+                <div className="col-md-3">
+                  <a href={configuration.link}>
+                    <img
+                      src={configuration.image}
+                      alt={configuration.name}
+                      width={optionImgWidth}
+                      className="navbar-profile-image"
+                    />
+                  </a>
+                </div>
+                <div className="col-md-9 my-auto ps-4">
+                  <a href={configuration.link}>
+                    <div className="p-0">{configuration.name}</div>
+                  </a>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="col-md-3">
+                  <img
+                    src={configuration.image}
+                    alt={configuration.name}
+                    width={optionImgWidth}
+                    className="navbar-profile-image"
+                  />
+                </div>
+                <div className="col-md-9 my-auto ps-4">
+                  <div className="p-0">{configuration.name}</div>
+                </div>
+              </>
+            )}
           </div>
         );
       })}

@@ -2,16 +2,14 @@ import "./TabSelector.css";
 
 const TabSelector = (props) => {
   const iconSize = "75px";
+
   return (
     <>
-      <div className="row w-100 ms-0 me-0 text-center tabSelector-padding">
+      <div className="row w-100 ms-0 me-0 text-center" 
+        style={{paddingLeft: props.padding, paddingRight: props.padding}}>
         {props.tabs.map((tab) => {
           return (
-            <div
-              className={`col pb-2 ${
-                tab.active ? "tabActive" : "tabNotActive"
-              }`}
-              key={tab.name}>
+            <div className={`col pb-2 zencluPointer ${(tab.id === props.selected) ? "tabActive" : "tabNotActive"}`} key={tab.name}>
               {props.haveImage ? (
                 <img
                   src={tab.image}
@@ -23,7 +21,7 @@ const TabSelector = (props) => {
               ) : (
                 <></>
               )}
-              <h4 className="zencluBold mt-2">{tab.name}</h4>
+              <h4 className="zencluBold mt-2 zencluPointer" onClick={() => {props.setSelected(tab.id)}}>{tab.name}</h4>
             </div>
           );
         })}
