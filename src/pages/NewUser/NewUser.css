@@ -4,6 +4,16 @@
   background-repeat: no-repeat;
 }
 
+.newUser-container .carousel-control-next-icon {
+  background-image: url("../../assets/Iconos/ArrowCarousel.svg") !important;
+  transform: rotate(0) !important;
+}
+
+.newUser-container .carousel-control-prev-icon {
+  background-image: url("../../assets/Iconos/ArrowCarousel.svg") !important;
+  transform: rotate(180deg) !important;
+}
+
 .newuser-title{
   font-size: 40pt;
   margin-top: 80%;

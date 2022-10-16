@@ -1,16 +1,13 @@
+.carousel-control-next-icon {
+  background-image: url("../../../assets/Iconos/ArrowCarouselDark.svg");
+  transform: rotate(180deg);
+}
+
 .carousel-control-prev-icon {
-  margin-left: -40px;
-  background-image: url("../../../assets/Iconos/Recurso\ 54.png") !important;
+  background-image: url("../../../assets/Iconos/ArrowCarouselDark.svg");
 }
 
-.carousel-control-next-icon {
-  margin-right: -40px;
-  background-image: url("../../../assets/Iconos/Recurso\ 53.png") !important;
+.carousel-control-next, .carousel-control-prev{
+  width: 10% !important;
+  opacity: 80%;
 }
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  width: 1.2vw;
-  height: 2vw;
-}
-

@@ -254,7 +254,7 @@ const NewUser = () => {
 
   return (
     <>
-      <div id="app-root">
+      <div id="app-root" className="newUser-container">
         <Header />
         {portada}
         {beneficios}
