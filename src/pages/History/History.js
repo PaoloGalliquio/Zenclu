@@ -68,7 +68,7 @@ const History = () => {
     <>
       <NavbarZ />
       <HeaderTitle image={historialIcon} title="Historial" />
-      <div className="history-container w-100 ms-0 me-0">
+      <div className="pageContainer">
         <div className="row">
           <div className="col ps-0 pe-0">
             <input

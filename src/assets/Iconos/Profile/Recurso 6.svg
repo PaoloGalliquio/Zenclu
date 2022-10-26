@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.5 15.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: gray;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1" data-name="Layer 1">
+    <path class="cls-1" d="M7.75,0C3.47,0,0,3.47,0,7.75s3.47,7.75,7.75,7.75,7.75-3.47,7.75-7.75S12.03,0,7.75,0Zm-.04,2.9c.63,0,1.14,.51,1.14,1.14s-.51,1.14-1.14,1.14-1.14-.51-1.14-1.14,.51-1.14,1.14-1.14Zm1.97,9.69h-3.86v-1h1.04V7.34h-.79v-1h2.57v5.25h1.04v1Z"/>
+  </g>
+</svg>

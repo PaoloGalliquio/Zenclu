@@ -156,12 +156,23 @@ const Home = () => {
     </div>
   );
 
-  const tendencias = (
+  const tendenciasHeader = (
     <div className="row mt-5 w-100 m-0">
       <div className="col-md-1 my-auto text-end"></div>
       <div className="col-md-10">
         <div className="row text-black trending mx-auto">
           <h3 className="mb-4">Tendencias de la semana</h3>
+        </div>
+      </div>
+      <div className="col-md-1 my-auto"></div>
+    </div>
+  );
+
+  const tendencias = (
+    <div className="row w-100 m-0">
+      <div className="col-md-1 my-auto text-end"></div>
+      <div className="col-md-10">
+        <div className="row text-black trending mx-auto">
           <div className="mb-5">
             <div className="row">
               {trendsData.map((trend) => {
@@ -243,6 +254,7 @@ const Home = () => {
     <>
       <NavbarZ />
       {title}
+      {tendenciasHeader}
       <CarouselZ
         items={[
           { id: 1, content: tendencias },

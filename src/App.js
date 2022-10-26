@@ -9,6 +9,7 @@ import Home from "./pages/Home/Home";
 import History from "./pages/History/History";
 import HelpCenter from "./pages/HelpCenter/HelpCenter";
 import Configuration from "./pages/Configuration/Configuration";
+import Profile from "./pages/Profile/Profile";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="History" element={<History />} />
           <Route path="HelpCenter" element={<HelpCenter />} />
           <Route path="Configuration" element={<Configuration />} />
+          <Route path="Profile" element={<Profile />} />
         </Routes>
       </BrowserRouter>
     </>

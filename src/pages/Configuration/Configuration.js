@@ -338,7 +338,7 @@ const Configuration = () => {
     <>
       <NavbarZ />
       <HeaderTitle image={configurationIcon} title="Configuración" />
-      <div className="history-container w-100 ms-0 me-0">
+      <div className="pageContainer">
         <div className="row">
           <div className="col">
             <div className="pb-5 pt-3">

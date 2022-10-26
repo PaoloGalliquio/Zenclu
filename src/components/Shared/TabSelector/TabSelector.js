@@ -9,7 +9,14 @@ const TabSelector = (props) => {
         style={{paddingLeft: props.padding, paddingRight: props.padding}}>
         {props.tabs.map((tab) => {
           return (
-            <div className={`col pb-2 zencluPointer ${(tab.id === props.selected) ? "tabActive" : "tabNotActive"}`} key={tab.name}>
+            <div
+              className={`col pb-2 zencluPointer ${
+                tab.id === props.selected ? "tabActive" : "tabNotActive"
+              }`}
+              key={tab.name}
+              onClick={() => {
+                props.setSelected(tab.id);
+              }}>
               {props.haveImage ? (
                 <img
                   src={tab.image}
@@ -21,7 +28,7 @@ const TabSelector = (props) => {
               ) : (
                 <></>
               )}
-              <h4 className="zencluBold mt-2 zencluPointer" onClick={() => {props.setSelected(tab.id)}}>{tab.name}</h4>
+              <h4 className="zencluBold mt-2 zencluPointer">{tab.name}</h4>
             </div>
           );
         })}

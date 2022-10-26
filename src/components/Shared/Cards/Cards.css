@@ -1,0 +1,25 @@
+.card{
+  height: 100% !important;
+}
+
+.cardTitle{
+  font-size: 17.5px;
+}
+
+.cardSubtitle{
+  font-size: 16.5px;
+}
+
+.live-Start{
+  background-color: #ededed;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.live-StartsAt{
+  font-size: 15px;
+}
+
+.live-Timer{
+  font-size: 23px;
+}

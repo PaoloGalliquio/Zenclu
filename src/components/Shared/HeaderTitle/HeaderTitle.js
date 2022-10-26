@@ -3,7 +3,7 @@ import "./HeaderTitle.css";
 const HeaderTitle = (props) => {
   return (
     <>
-      <div className="row w-100 d-flex headerTitle-container ms-0 me-0">
+      <div className={`row w-100 d-flex headerTitle-container ms-0 me-0 ${props.isDark ? "darkercolor" : ""}`}>
         <div className="headerTitle-icon">
           <img
             src={props.image}

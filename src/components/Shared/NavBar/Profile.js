@@ -61,7 +61,9 @@ const Add = () => {
     <div className="navbar-profile-background zencluCursor fadeIn fast">
       <div className="navbar-profile-triangle"></div>
       <div className="text-center">
-        <img src={profileIcon} alt="Icono de perfil" width={"70px"} />
+        <a href="/Profile">
+          <img src={profileIcon} alt="Icono de perfil" width={"70px"} />
+        </a>
         <img
           src={editIcon}
           alt="Editar perfil"
@@ -69,8 +71,12 @@ const Add = () => {
           className="navbar-profile-close"
         />
       </div>
-      <h6 className="text-center zencluBold mt-2">Ernesto Rodrigo</h6>
-      <p className="text-center zencluLink">Ver todo</p>
+      <a href="/Profile">
+        <h6 className="text-center zencluBold mt-2">Ernesto Rodrigo</h6>
+      </a>
+      <a href="/Profile">
+        <p className="text-center zencluLink">Ver todo</p>
+      </a>
       <div className="navbar-division"></div>
       {options.map((option) => {
         return (

@@ -56,7 +56,7 @@ const HelpCenter = () => {
     <>
       <NavbarZ />
       <HeaderTitle image={helpCenterIcon} title="Centro de ayuda" />
-      <div className="history-container w-100 ms-0 me-0">
+      <div className="pageContainer">
         <div className="row">
           <div className="col ps-0 pe-0">
             <input
