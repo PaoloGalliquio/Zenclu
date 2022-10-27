@@ -68,9 +68,11 @@ const SubscriptionSubscribe = (props) => {
                 <h5 className="text-end">{props.value}</h5>
               </div>
             </div>
-            <Button variant="primary w-100 mt-2 bluebigcolorletter Spacing">
-              SUSCRIBIRME
-            </Button>
+            <a href="/PaymentMethods">
+              <Button variant="primary w-100 mt-2 bluebigcolorletter Spacing">
+                SUSCRIBIRME
+              </Button>
+            </a>
           </Card.Body>
         </Card>
       </div>

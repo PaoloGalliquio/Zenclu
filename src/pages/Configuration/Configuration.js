@@ -266,19 +266,19 @@ const Configuration = () => {
     </div>
     {pagos.map((pago, i) => {
       return(
-        <>
-        <div className="row mt-4">
-          <div className="col-md-2 configuration-text zencluMedium">{pago.date}</div>
-          <div className="col">
-            <div className="row"><div className="col configuration-subtitle zencluBold">{pago.purchase}</div></div>
-            <div className="row"><div className="col configuration-text zencluMedium">{pago.cost}</div></div>
+        <div key={i}>
+          <div className="row mt-4">
+            <div className="col-md-2 configuration-text zencluMedium">{pago.date}</div>
+            <div className="col">
+              <div className="row"><div className="col configuration-subtitle zencluBold">{pago.purchase}</div></div>
+              <div className="row"><div className="col configuration-text zencluMedium">{pago.cost}</div></div>
+            </div>
+            <div className="col-md-1 my-auto">
+              <img src={Download} alt="descargar" width={"60px"}/>
+            </div>
           </div>
-          <div className="col-md-1 my-auto">
-            <img src={Download} alt="descargar" width={"60px"}/>
-          </div>
+          <div className="navbar-division mt-4"></div>
         </div>
-        <div className="navbar-division mt-4"></div>
-        </>
       );
     })}
     </>
@@ -297,7 +297,7 @@ const Configuration = () => {
     </div>
     {tarjetas.map((tarjeta) => {
       return(
-        <div className="row mt-4">
+        <div className="row mt-4" key={tarjeta.id}>
           <div className="col-md-4 configuration-card ms-2">
             <div className="row">
               <div className="col-md-5 my-auto">

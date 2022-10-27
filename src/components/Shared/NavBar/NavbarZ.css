@@ -1,3 +1,8 @@
+.navbar-dark{
+  background: rgb(33,35,50) !important;
+  background: linear-gradient(90deg, rgba(33,35,50,0.95) 0%, rgba(62,64,77,0.95) 100%) !important;
+}
+
 .navbarheiht{
   height: 89px;
 }

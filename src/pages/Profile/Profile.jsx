@@ -11,6 +11,7 @@ import Live from "../../components/Shared/Cards/Live";
 
 import ProfileIcon from "../../assets/Iconos/Profile/Recurso 1.svg";
 import ProfilePhoto from "../../assets/Iconos/Profile/Recurso 2.svg";
+import Edit from "../../assets/Iconos/Profile/Recurso 5.svg";
 import ZencluPoints from "../../assets/Iconos/Profile/Recurso 3.svg";
 import ZencluIngots from "../../assets/Iconos/Profile/Recurso 4.svg";
 import InformationIcon from "../../assets/Iconos/Profile/Recurso 6.svg";
@@ -188,14 +189,17 @@ const Profile = () => {
 
   const principalInformation = (
     <>
-    <div className="row profile-profilePhoto">
-      <div className="col text-center">
+    <div className="row profile-profilePhoto mx-auto">
+      <div className="col text-center container-icon">
         <img
           src={ProfilePhoto}
           alt="Foto de perfil"
           className="m-0 p-0"
           height={"95px"}
         />
+        <div className="profile-editButton">
+          <img src={Edit} alt="Cambiar foto" height={"17px"} />
+        </div>
       </div>
     </div>
     <div className="row">

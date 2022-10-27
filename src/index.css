@@ -116,8 +116,7 @@ a, a:visited, a:hover{
   display: block;
   border: none;
   height: 3px;
-  background-color: #f2f2e9;
-  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 800, from(#000000), to(rgba(255,255,255,0)));
+  background: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
 }
 
 .tabActive{

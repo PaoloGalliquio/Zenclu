@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import Zwallet from "./pages/ZWallet/ZWallet";
 import NewUser from "./pages/NewUser/NewUser";
 import Suscripciones from "./pages/Subscriptions/Suscripciones";
@@ -10,10 +10,12 @@ import History from "./pages/History/History";
 import HelpCenter from "./pages/HelpCenter/HelpCenter";
 import Configuration from "./pages/Configuration/Configuration";
 import Profile from "./pages/Profile/Profile";
+import PaymentMethods from "./pages/PaymentMethods/PaymentMethods";
 
 function App() {
+
   return (
-    <>
+    <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<NewUser />} />
@@ -26,9 +28,10 @@ function App() {
           <Route path="HelpCenter" element={<HelpCenter />} />
           <Route path="Configuration" element={<Configuration />} />
           <Route path="Profile" element={<Profile />} />
+          <Route path="PaymentMethods" element={<PaymentMethods />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 

@@ -1,5 +1,19 @@
 .profile-profilePhoto{
   margin-top: -40px;
+  max-width: 150px;
+}
+
+.profile-editButton{
+  position: absolute;
+  background-color: rgb(237, 237, 237, 0.8);
+  top: 0;
+  right: 0;
+  margin-top: 30px;
+  margin-right: 5px;
+  width: 34px;
+  height: 34px;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .profile-profileLevel{
@@ -9,7 +23,7 @@
   font-weight: 500;
   font-size: 19px;
   padding-top: 2px;
-  margin-top: -10px;
+  margin-top: -7px;
   border-radius: 10px;
 }
 

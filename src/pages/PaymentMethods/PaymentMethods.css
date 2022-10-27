@@ -1,0 +1,63 @@
+.paymentMethod-container{
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.payment-back{
+  font-size: 25px;
+  margin-left: 80px;
+}
+
+.payment-title{
+  font-size: 25px;
+}
+
+.payment-video{
+  font-size: 23px;
+}
+
+.payment-paragraph{
+  font-size: 14px;
+}
+
+.payment-price{
+  font-size: 27px;
+}
+
+.payment-videoTitle{
+  font-size: 17px;
+  margin-bottom: -5px;
+}
+
+.payment-includes{
+  font-size: 16px;
+}
+
+.payment-security{
+  border: 5px solid #9FDCA8;
+  border-radius: 15px;
+  padding: 15px 10px 15px 10px;
+}
+
+.payment-method{
+  border: 2px solid lightgray;
+  max-width: 320px;
+  border-radius: 10px;
+  font-size: 19px;
+  padding: 10px;
+}
+
+.rotate90{
+  transform: rotate(90deg);
+}
+
+.payment-videoContainer{
+  max-width: 378px;
+  background-color: #ededed;
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.payment-checkIcon{
+  max-width: 50px;
+}
