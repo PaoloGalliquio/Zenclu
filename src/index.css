@@ -73,6 +73,10 @@ a, a:visited, a:hover{
   font-weight: 500;
 }
 
+.zencluRegular{
+  font-weight: 300;
+}
+
 .zencluMuted{
   color: rgb(130, 130, 130);
 }

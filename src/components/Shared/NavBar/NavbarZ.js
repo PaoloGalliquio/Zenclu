@@ -30,10 +30,7 @@ const NavbarZ = () => {
 
   return (
     <>
-      <Navbar
-        bg="dark"
-        variant="dark"
-        className="p-3 navbarheiht w-100 m-0"
+      <Navbar bg="dark" variant="dark" className="p-3 navbarheiht w-100 m-0"
         onClick={() => {
           handleClose();
         }}>
@@ -73,74 +70,48 @@ const NavbarZ = () => {
             }}>
             <div className="nav-link">
               <div className="icon-notification">
-                <img
-                  src={image3}
-                  width={iconSize}
-                  height={iconSize}
-                  alt="Messages"
-                  className="d-inline-block align-top ms-1 mf-1 zencluPointer"
+                <img src={image3} width={iconSize} height={iconSize} alt="Messages" className="d-inline-block align-top ms-1 mf-1 zencluPointer"
                   onClick={() => {
                     handleClick(1);
                   }}
                 />
-                {showModal === 1 && <Messages />}
+                {showModal === 1 && <Messages close={setShowModal}/>}
                 <h6 className="dot-notification">1</h6>
               </div>
             </div>
             <div className="nav-link">
-              <img
-                src={image4}
-                width={iconSize}
-                height={iconSize}
-                alt="Add"
-                className="d-inline-block align-top ms-1 mf-1 zencluPointer"
+              <img src={image4} width={iconSize} height={iconSize} alt="Add" className="d-inline-block align-top ms-1 mf-1 zencluPointer"
                 onClick={() => {
                   handleClick(2);
                 }}
               />
-              {showModal === 2 && <Add />}
+              {showModal === 2 && <Add close={setShowModal}/>}
             </div>
             <div className="nav-link">
-              <img
-                src={image5}
-                width={iconSize}
-                height={iconSize}
-                alt="Bell"
-                className="d-inline-block align-top ms-1 mf-1 zencluPointer"
+              <img src={image5} width={iconSize} height={iconSize} alt="Bell" className="d-inline-block align-top ms-1 mf-1 zencluPointer"
                 onClick={() => {
                   handleClick(3);
                 }}
               />
-              {showModal === 3 && <Bell />}
+              {showModal === 3 && <Bell close={setShowModal}/>}
             </div>
             <div className="nav-link">
               <div className="icon-notification">
                 <h4 className="text-center icon-subtext">200</h4>
                 <a href="/Zwallet">
-                  <img
-                    src={image6}
-                    width={iconSize}
-                    height={iconSize}
-                    alt="Zwallet"
-                    className="d-inline-block align-top ms-1 mf-1 zencluPointer"
-                  />
+                  <img src={image6} width={iconSize} height={iconSize} alt="Zwallet" className="d-inline-block align-top ms-1 mf-1 zencluPointer" />
                 </a>
               </div>
             </div>
             <div className="nav-link">
               <div className="icon-notification">
-                <img
-                  src={image7}
-                  width={bigIconSize}
-                  height={bigIconSize}
-                  alt="Profile"
-                  className="d-inline-block align-top ms-1 mf-1 zencluPointer"
+                <img src={image7} width={bigIconSize} height={bigIconSize} alt="Profile" className="d-inline-block align-top ms-1 mf-1 zencluPointer"
                   onClick={() => {
                     handleClick(4);
                   }}
                 />
                 <h6 className="dot-notification">1</h6>
-                {showModal === 4 && <Profile />}
+                {showModal === 4 && <Profile close={setShowModal}/>}
               </div>
             </div>
           </Nav>

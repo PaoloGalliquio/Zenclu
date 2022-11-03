@@ -1,14 +1,6 @@
 import { Card, Button } from "react-bootstrap";
 import viewsIcon from "../../../assets/Iconos/Recurso 52.png";
 
-const typeInfo = (type) => {
-  if (type === "Video") {
-    return <Button variant="primary bluecolor pe-4 ps-4">{type}</Button>;
-  } else {
-    return <Button variant="success greencolor pe-4 ps-4">{type}</Button>;
-  }
-};
-
 const SubscriptionView = (props) => {
   return (
     <div className="col ps-2 pe-2" key={props.id}>
@@ -37,7 +29,11 @@ const SubscriptionView = (props) => {
               </div>
             </div>
             <div className="col-md-6 text-end tagCursoVideo">
-              {typeInfo(props.type)}
+              <Button variant={`success pe-4 ps-4 ${props.type === "Video" ? "bluecolor" : "greencolor"}`} 
+                onClick={() => {props.openModal(true)}}
+              >
+                {props.type}
+              </Button>
             </div>
           </div>
         </Card.Body>

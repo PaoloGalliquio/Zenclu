@@ -6,7 +6,7 @@ import messageIcon from "../../../assets/Iconos/NavBar/BellIcons/Recurso 30.png"
 import reactionIcon from "../../../assets/Iconos/NavBar/BellIcons/Recurso 29.png";
 import followIcon from "../../../assets/Iconos/NavBar/BellIcons/Recurso 31.png";
 
-const Bell = () => {
+const Bell = (props) => {
   const creatorImgWidth = "50px";
   const notificationImgWidth = "20px";
 
@@ -32,40 +32,42 @@ const Bell = () => {
   ];
 
   return (
-    <div className="navbar-background zencluCursor fadeIn fast">
-      <div className="navbar-triangle"></div>
-      {creators.map((creator) => {
-        return (
-          <div key={creator.name}>
-            <div className="row" key={creator.name}>
-              <div className="col-md-3">
-                <img
-                  src={creator.image}
-                  alt={creator.name}
-                  width={creatorImgWidth}
-                />
-                <img
-                  src={creator.notification}
-                  alt="Notification"
-                  width={notificationImgWidth}
-                  className="navbar-notification"
-                />
-              </div>
-              <div className="col-md-9 my-auto ps-4">
-                <div className="row zencluBold">
-                  <div className="col p-0">{creator.name}</div>
+    <div className="modalBackdrop" onClick={() => {props.close(0);}}>
+      <div className="navbar-background-bell zencluCursor fadeIn fast" onClick={e => {e.stopPropagation();}}>
+        <div className="navbar-triangle"></div>
+        {creators.map((creator) => {
+          return (
+            <div key={creator.name}>
+              <div className="row" key={creator.name}>
+                <div className="col-md-3">
+                  <img
+                    src={creator.image}
+                    alt={creator.name}
+                    width={creatorImgWidth}
+                  />
+                  <img
+                    src={creator.notification}
+                    alt="Notification"
+                    width={notificationImgWidth}
+                    className="navbar-notification"
+                  />
                 </div>
-                <div className="row">
-                  <div className="col p-0">{creator.message}</div>
+                <div className="col-md-9 my-auto ps-4">
+                  <div className="row zencluBold">
+                    <div className="col p-0">{creator.name}</div>
+                  </div>
+                  <div className="row">
+                    <div className="col p-0">{creator.message}</div>
+                  </div>
                 </div>
               </div>
+              <div className="navbar-division"></div>
             </div>
-            <div className="navbar-division"></div>
-          </div>
-        );
-      })}
-      <div className="text-center">
-        <p className="zencluLink">Ver todo</p>
+          );
+        })}
+        <div className="text-center">
+          <p className="zencluLink">Ver todo</p>
+        </div>
       </div>
     </div>
   );

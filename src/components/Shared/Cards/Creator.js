@@ -24,9 +24,11 @@ const Creator = (props) => {
         <Card.Body>
           <h4 className="text-center pb-3">{props.name}</h4>
           {showThemesTags(props.themes)}
-          <Button variant="success w-100 mt-3 text-center greencolor">
-            Ver pefil completo
-          </Button>
+          <a href="/CreatorProfile">
+            <Button variant="success w-100 mt-3 text-center greencolor">
+              Ver pefil completo
+            </Button>
+          </a>
         </Card.Body>
       </Card>
     </div>

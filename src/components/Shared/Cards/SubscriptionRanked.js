@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 import { Rating } from "@mui/material";
 
 const SubscriptionRanked = (props) => {
-  const videoCreatorPhotoWidth = "60px";
+  const videoCreatorPhotoWidth = props.small ? "45px" : "60px";
 
   return (
     <div className="col ps-2 pe-2" key={props.id}>
@@ -23,12 +23,21 @@ const SubscriptionRanked = (props) => {
                 width={videoCreatorPhotoWidth}
               />
             </div>
-            <div className="col-md-9 ps-0">
-              <h5>{props.title}</h5>
-              <h6>{props.creator}</h6>
-              <Rating name="read-only" value={props.raking} readOnly />
-              <h5 className="zencluBold">S/ {props.price}</h5>
-            </div>
+            {props.small ? 
+              <div className="col-md-9 ps-0">
+                <div className="cardTitleSmall zencluMedium">{props.title}</div>
+                <div className="cardSubtitleSmall zencluRegular">{props.creator}</div>
+                <Rating name="read-only" value={props.raking} readOnly />
+                <div className="cardTitleSmall zencluBold">S/ {props.price}</div>
+              </div>
+              :
+              <div className="col-md-9 ps-0">
+                <div className="h5">{props.title}</div>
+                <div className="h6 zencluRegular">{props.creator}</div>
+                <Rating name="read-only" value={props.raking} readOnly />
+                <div className="h5 zencluBold">S/ {props.price}</div>
+              </div>
+            }
           </div>
         </Card.Body>
       </Card>

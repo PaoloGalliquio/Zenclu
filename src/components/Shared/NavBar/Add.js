@@ -1,64 +1,68 @@
 import "./NavbarZ.css";
+import { useState } from "react";
 import image1 from "../../../assets/Iconos/NavBar/AddIcons/VideoIcon.png";
 import image2 from "../../../assets/Iconos/NavBar/AddIcons/CalendarIcon.png";
 import image3 from "../../../assets/Iconos/NavBar/AddIcons/ShakeIcon.png";
+import AddVideo from "../../../Modals/AddVideo/AddVideo";
 
-const Add = () => {
+const Add = (props) => {
   const optionImgWidth = "50px";
-
-  const options = [
-    {
-      name: "Video",
-      message: "Sube un video",
-      image: image1,
-      last: false,
-    },
-    {
-      name: "Sala",
-      message: "Agenda una sala",
-      image: image2,
-      last: false,
-    },
-    {
-      name: "Vende",
-      message: "Vende",
-      image: image3,
-      last: true,
-    },
-  ];
+  const [modalVideo, setModalVideo] = useState(false);
 
   return (
-    <div className="navbar-background fadeIn fast">
-      <div className="navbar-triangle"></div>
-      {options.map((option) => {
-        return (
-          <div key={option.name}>
-            <div className="row">
-              <div className="col-md-3">
-                <img
-                  src={option.image}
-                  alt={option.name}
-                  width={optionImgWidth}
-                />
-              </div>
-              <div className="col-md-9 my-auto ps-4">
-                <div className="row zencluBold">
-                  <div className="col p-0">{option.name}</div>
-                </div>
-                <div className="row">
-                  <div className="col p-0">{option.message}</div>
-                </div>
-              </div>
-            </div>
-            {option.last ? (
-              <div className="pb-3"></div>
-            ) : (
-              <div className="navbar-division"></div>
-            )}
+    <>
+    {modalVideo ? <AddVideo close={props.close}/> :
+    <div className="modalBackdrop" onClick={() => {props.close(0);}}>
+      <div className="navbar-background-add fadeIn fast" onClick={e => {e.stopPropagation();}}>
+        <div className="navbar-triangle"></div>
+        <div className="row">
+          <div className="col-md-3">
+            <img src={image1} alt="Video" width={optionImgWidth}/>
           </div>
-        );
-      })}
+          <div className="col-md-9 my-auto ps-4 zencluPointer">
+            <span onClick={() => {setModalVideo(true)}}>
+              <div className="row zencluBold">
+                <div className="col p-0">Video</div>
+              </div>
+              <div className="row">
+                <div className="col p-0">Sube un video</div>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div className="navbar-division"></div>
+        <div className="row">
+          <div className="col-md-3">
+            <img src={image2} alt="Sala" width={optionImgWidth}/>
+          </div>
+          <div className="col-md-9 my-auto ps-4">
+            <div className="row zencluBold">
+              <div className="col p-0">Sala</div>
+            </div>
+            <div className="row">
+              <div className="col p-0">Agenda una sala</div>
+            </div>
+          </div>
+        </div>
+        <div className="navbar-division"></div>
+        <div className="row">
+          <div className="col-md-3">
+            <img src={image3} alt="Vende" width={optionImgWidth}/>
+          </div>
+          <div className="col-md-9 my-auto ps-4">
+            <div className="row zencluBold">
+              <div className="col p-0">Vende</div>
+            </div>
+            <div className="row">
+              <div className="col p-0">Vende</div>
+            </div>
+          </div>
+        </div>
+        <div className="pb-3"></div>
+      </div>
     </div>
+    }
+    </>
   );
 };
 

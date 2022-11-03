@@ -6,3 +6,11 @@
 .tabSelector-icon{
   object-fit: contain;
 }
+
+.tabSelector-large{
+  font-size: 1.5rem;
+}
+
+.tabSelector-small{
+  font-size: 16.6px;
+}

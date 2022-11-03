@@ -1,24 +1,31 @@
 import "./Home.css";
+import { useState } from "react";
 import Footer from "../../components/Shared/Footer/Footer";
 import NavbarZ from "../../components/Shared/NavBar/NavbarZ";
-import image1 from "../../assets/fotos/Recurso 42.png";
-import image2 from "../../assets/fotos/Recurso 11.png";
-import image3 from "../../assets/fotos/Recurso 12.png";
-import image4 from "../../assets/fotos/Recurso 11.png";
-import image5 from "../../assets/fotos/Recurso 50.png";
-import image6 from "../../assets/fotos/Recurso 49.png";
-import image7 from "../../assets/fotos/Recurso 48.png";
-import image8 from "../../assets/fotos/Recurso 47.png";
-import image9 from "../../assets/fotos/Recurso 46.png";
-import image10 from "../../assets/fotos/Recurso 45.png";
-import image11 from "../../assets/fotos/Recurso 44.png";
-import image12 from "../../assets/fotos/Recurso 43.png";
 import SubscriptionView from "../../components/Shared/Cards/SubscriptionView";
 import SubscriptionSubscribe from "../../components/Shared/Cards/SubscriptionSubscribe";
 import Creator from "../../components/Shared/Cards/Creator";
 import CarouselZ from "../../components/Shared/Carousel/Carousel";
 
+import image1 from "../../assets/fotos/Recurso 42.png";
+import image2 from "../../assets/fotos/Recurso 11.png";
+import image3 from "../../assets/fotos/Recurso 12.png";
+import image4 from "../../assets/fotos/Recurso 11.png";
+
+import image5 from "../../assets/fotos/Recurso 50.png";
+import image6 from "../../assets/fotos/Recurso 49.png";
+import image7 from "../../assets/fotos/Recurso 48.png";
+import image8 from "../../assets/fotos/Recurso 47.png";
+
+import image9 from "../../assets/fotos/Recurso 46.png";
+import image10 from "../../assets/fotos/Recurso 45.png";
+import image11 from "../../assets/fotos/Recurso 44.png";
+import image12 from "../../assets/fotos/Recurso 43.png";
+import Subscription from "../../Modals/Subscription/Subscription";
+
 const Home = () => {
+  const [showModal, setShowModal] = useState(false);
+
   const subscriptionsData = [
     {
       id: 1,
@@ -147,6 +154,7 @@ const Home = () => {
                 author={suscripcion.author}
                 views={suscripcion.views}
                 type={suscripcion.type}
+                openModal={setShowModal}
               />
             );
           })}
@@ -252,6 +260,7 @@ const Home = () => {
 
   return (
     <>
+      {showModal ? <Subscription showModal={setShowModal}/> : <></>}
       <NavbarZ />
       {title}
       {tendenciasHeader}

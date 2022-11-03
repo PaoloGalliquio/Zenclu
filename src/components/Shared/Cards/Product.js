@@ -2,7 +2,39 @@ import "./Cards.css";
 import { Card } from "react-bootstrap";
 
 const Product = (props) => {
-  const videoCreatorPhotoWidth = "55px";
+  const videoCreatorPhotoWidth = props.small ? "45px" : "55px";
+
+  if(props.small){
+    return(
+      <div className="col ps-2 pe-2" key={props.id}>
+        <Card className="ps-2 pe-2 pt-0 border-0 mx-auto">
+          <Card.Img
+            className="mt-2"
+            variant="top"
+            src={props.photo}
+            alt={props.title}
+          />
+          <Card.Body className="pt-3 pe-0 ps-0 pb-2">
+            <div className="row">
+              <div className="col-md-3 text-center">
+                <img src={props.sellerPhoto} alt={props.sellerName} width={videoCreatorPhotoWidth}/>
+              </div>
+              <div className="col-md-9 ps-0">
+                <div className="cardTitleSmall zencluMedium">{props.title}</div>
+                <div className="cardSubtitleSmall mb-1">{props.sellerName}</div>
+                <div className="cardTitleSmall zencluMedium">
+                  {props.priceDiscount} &nbsp;
+                  <span className="text-decoration-line-through">
+                    {props.price}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </Card.Body>
+        </Card>
+      </div>
+    );
+  }
   if(props.isBought){
     return(
       <div className="col ps-2 pe-2" key={props.id}>

@@ -28,7 +28,11 @@ const TabSelector = (props) => {
               ) : (
                 <></>
               )}
-              <h4 className="zencluBold mt-2 zencluPointer">{tab.name}</h4>
+              {props.small ? 
+                <div className="zencluBold mt-2 tabSelector-small pb-1">{tab.name}</div>
+                :
+                <div className="zencluMedium mt-2 tabSelector-large pb-1">{tab.name}</div>
+              }
             </div>
           );
         })}

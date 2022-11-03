@@ -10,7 +10,7 @@ import historialIcon from "../../../assets/Iconos/NavBar/ProfileIcons/Recurso 15
 import ayudaIcon from "../../../assets/Iconos/NavBar/ProfileIcons/Recurso 16.png";
 import contiguracionIcon from "../../../assets/Iconos/NavBar/ProfileIcons/Recurso 17.png";
 
-const Add = () => {
+const Add = (props) => {
   const optionImgWidth = "50px";
 
   const options = [
@@ -58,110 +58,112 @@ const Add = () => {
   ];
 
   return (
-    <div className="navbar-profile-background zencluCursor fadeIn fast">
-      <div className="navbar-profile-triangle"></div>
-      <div className="text-center">
+    <div className="modalBackdrop" onClick={() => {props.close(0);}}>
+      <div className="navbar-profile-background zencluCursor fadeIn fast" onClick={e => {e.stopPropagation();}}>
+        <div className="navbar-profile-triangle"></div>
+        <div className="text-center">
+          <a href="/Profile">
+            <img src={profileIcon} alt="Icono de perfil" width={"70px"} />
+          </a>
+          <img
+            src={editIcon}
+            alt="Editar perfil"
+            width={"25px"}
+            className="navbar-profile-close"
+          />
+        </div>
         <a href="/Profile">
-          <img src={profileIcon} alt="Icono de perfil" width={"70px"} />
+          <h6 className="text-center zencluBold mt-2">Ernesto Rodrigo</h6>
         </a>
-        <img
-          src={editIcon}
-          alt="Editar perfil"
-          width={"25px"}
-          className="navbar-profile-close"
-        />
-      </div>
-      <a href="/Profile">
-        <h6 className="text-center zencluBold mt-2">Ernesto Rodrigo</h6>
-      </a>
-      <a href="/Profile">
-        <p className="text-center zencluLink">Ver todo</p>
-      </a>
-      <div className="navbar-division"></div>
-      {options.map((option) => {
-        return (
-          <div className="row mb-2" key={option.name}>
-            {option.link ? (
-              <>
-                <div className="col-md-3">
-                  <a href={option.link}>
+        <a href="/Profile">
+          <p className="text-center zencluLink">Ver todo</p>
+        </a>
+        <div className="navbar-division"></div>
+        {options.map((option) => {
+          return (
+            <div className="row mb-2" key={option.name}>
+              {option.link ? (
+                <>
+                  <div className="col-md-3">
+                    <a href={option.link}>
+                      <img
+                        src={option.image}
+                        alt={option.name}
+                        width={optionImgWidth}
+                        className="navbar-profile-image"
+                      />
+                    </a>
+                  </div>
+                  <div className="col-md-9 my-auto ps-3">
+                    <a href={option.link}>
+                      <div className="p-0">{option.name}</div>
+                    </a>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="col-md-3">
                     <img
                       src={option.image}
                       alt={option.name}
                       width={optionImgWidth}
                       className="navbar-profile-image"
                     />
-                  </a>
-                </div>
-                <div className="col-md-9 my-auto ps-3">
-                  <a href={option.link}>
+                  </div>
+                  <div className="col-md-9 my-auto ps-3">
                     <div className="p-0">{option.name}</div>
-                  </a>
-                </div>
-              </>
-            ) : (
-              <>
-                <div className="col-md-3">
-                  <img
-                    src={option.image}
-                    alt={option.name}
-                    width={optionImgWidth}
-                    className="navbar-profile-image"
-                  />
-                </div>
-                <div className="col-md-9 my-auto ps-3">
-                  <div className="p-0">{option.name}</div>
-                </div>
-              </>
-            )}
-          </div>
-        );
-      })}
-      <div className="navbar-division"></div>
-      {configurations.map((configuration) => {
-        return (
-          <div className="row mb-2" key={configuration.name}>
-            {configuration.link ? (
-              <>
-                <div className="col-md-3">
-                  <a href={configuration.link}>
+                  </div>
+                </>
+              )}
+            </div>
+          );
+        })}
+        <div className="navbar-division"></div>
+        {configurations.map((configuration) => {
+          return (
+            <div className="row mb-2" key={configuration.name}>
+              {configuration.link ? (
+                <>
+                  <div className="col-md-3">
+                    <a href={configuration.link}>
+                      <img
+                        src={configuration.image}
+                        alt={configuration.name}
+                        width={optionImgWidth}
+                        className="navbar-profile-image"
+                      />
+                    </a>
+                  </div>
+                  <div className="col-md-9 my-auto ps-4">
+                    <a href={configuration.link}>
+                      <div className="p-0">{configuration.name}</div>
+                    </a>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="col-md-3">
                     <img
                       src={configuration.image}
                       alt={configuration.name}
                       width={optionImgWidth}
                       className="navbar-profile-image"
                     />
-                  </a>
-                </div>
-                <div className="col-md-9 my-auto ps-4">
-                  <a href={configuration.link}>
+                  </div>
+                  <div className="col-md-9 my-auto ps-4">
                     <div className="p-0">{configuration.name}</div>
-                  </a>
-                </div>
-              </>
-            ) : (
-              <>
-                <div className="col-md-3">
-                  <img
-                    src={configuration.image}
-                    alt={configuration.name}
-                    width={optionImgWidth}
-                    className="navbar-profile-image"
-                  />
-                </div>
-                <div className="col-md-9 my-auto ps-4">
-                  <div className="p-0">{configuration.name}</div>
-                </div>
-              </>
-            )}
-          </div>
-        );
-      })}
-      <div className="navbar-division"></div>
-      <div className="text-center">
-        <p className="zencluLink">
-          <a href="/">Cerrar sesión</a>
-        </p>
+                  </div>
+                </>
+              )}
+            </div>
+          );
+        })}
+        <div className="navbar-division"></div>
+        <div className="text-center">
+          <p className="zencluLink">
+            <a href="/">Cerrar sesión</a>
+          </p>
+        </div>
       </div>
     </div>
   );

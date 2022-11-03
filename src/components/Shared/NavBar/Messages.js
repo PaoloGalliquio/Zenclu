@@ -7,7 +7,7 @@ import image1 from "../../../assets/fotos/Recurso 43.png";
 import image2 from "../../../assets/fotos/Recurso 44.png";
 import image3 from "../../../assets/fotos/Recurso 45.png";
 
-const Messages = () => {
+const Messages = (props) => {
   const chatImgWidth = "50px";
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [selectedChat, setSelectedChat] = useState({
@@ -257,20 +257,22 @@ const Messages = () => {
   );
 
   return (
-    <div className="navbar-messages-background zencluCursor fadeIn fast">
-      <div className="navbar-triangle"></div>
-      {!isChatOpen && (
-        <>
-          {cabeceraChats}
-          {chats}
-        </>
-      )}
-      {isChatOpen && (
-        <>
-          {cabeceraChat}
-          {chat}
-        </>
-      )}
+    <div className="modalBackdrop" onClick={() => {props.close(0);}}>
+      <div className="navbar-messages-background zencluCursor fadeIn fast" onClick={e => {e.stopPropagation();}}>
+        <div className="navbar-triangle"></div>
+        {!isChatOpen && (
+          <>
+            {cabeceraChats}
+            {chats}
+          </>
+        )}
+        {isChatOpen && (
+          <>
+            {cabeceraChat}
+            {chat}
+          </>
+        )}
+      </div>
     </div>
   );
 };

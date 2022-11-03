@@ -11,6 +11,8 @@ import HelpCenter from "./pages/HelpCenter/HelpCenter";
 import Configuration from "./pages/Configuration/Configuration";
 import Profile from "./pages/Profile/Profile";
 import PaymentMethods from "./pages/PaymentMethods/PaymentMethods";
+import CreatorProfile from "./pages/CreatorProfile/CreatorProfile";
+import VideoCourse from "./pages/VideoCourse/VideoCourse";
 
 function App() {
 
@@ -28,7 +30,9 @@ function App() {
           <Route path="HelpCenter" element={<HelpCenter />} />
           <Route path="Configuration" element={<Configuration />} />
           <Route path="Profile" element={<Profile />} />
+          <Route path="CreatorProfile" element={<CreatorProfile />} />
           <Route path="PaymentMethods" element={<PaymentMethods />} />
+          <Route path="VideoCourse" element={<VideoCourse />} />
         </Routes>
       </BrowserRouter>
     </div>

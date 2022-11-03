@@ -1,0 +1,77 @@
+.addVideo-container{
+  padding: 35px;
+}
+
+.addVideo-title{
+  font-size: 22px;
+}
+
+.addVideo-close{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.addVideo-button{
+  background-color: #0086FA;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  height: 35px;
+  width: 240px;
+}
+
+.addVideo-button:hover{
+  background-color: #157bd4;
+}
+
+.addVideo-text{
+  font-size: 14px;
+}
+
+.addVideo-dropFile{
+  margin-top: 35px;
+  height: 315px;
+  background-color: #DADDE0;
+  border-radius: 15px;
+}
+
+.addVideo-uploadVideo-dropFile{
+  padding-top: 110px;
+}
+
+.addVideo-chargingVideo-dropFile{
+  padding-top: 50px;
+}
+
+.addVideo-uploadBarBg{
+  width: 640px;
+  height: 32px;
+  position: relative;
+  margin: 55px auto 0px auto;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.addVideo-percentage{
+  position: absolute;
+  color: #0086FA;
+  width: 54px;
+  margin: -53px auto 0px -27px;
+  font-size: 27px;
+}
+
+.addVideo-arrow{
+  position: absolute;
+  margin: -15px auto 0px -6px;
+}
+
+.addVideo-uploadBarCharged{
+  height: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(95,179,252,1) 0%, rgba(0,134,250,1) 100%);
+}
