@@ -37,6 +37,23 @@ h6{
   font-weight: 400;
 }
 
+select {
+  appearance: none;
+  border: none;
+}
+
+select:focus {
+  outline: none;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
 .greencolor{
   color: #4D4D4D;
   background-color: #9FDCA8;
@@ -244,7 +261,7 @@ h6{
   height: 18px;
   margin-right: 10px;
   width: 18px;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 .grayCircle{
@@ -320,7 +337,7 @@ h6{
 }
 
 .modal-container{
-  background: white;
+  background: rgb(255, 255, 255, 0.9);
   border-radius: 10px;
   width: 750px;
   padding: 20px;

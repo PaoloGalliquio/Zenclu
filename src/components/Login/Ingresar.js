@@ -14,10 +14,7 @@ const Ingresar = (props) => {
       <div className="text-center modalBackground fadeIn fast">
         <div className="row modalContainer">
           <div className="container-icon">
-            <img
-              src={CloseIcon}
-              height="25"
-              className="close-icon"
+            <img src={CloseIcon} height="25" className="close-icon"
               onClick={() => {
                 document.getElementById("app-root").style.filter = "blur(0px)";
                 props.login(false);
@@ -27,39 +24,24 @@ const Ingresar = (props) => {
           </div>
           <div className="container-icon">
             <img src={FacebookIcon} height="25" className="login-icon" />
-            <Button
-              variant="light"
-              className="text-center mb-3 modalWidth bg-white">
+            <Button variant="light" className="text-center mb-3 modalWidth bg-white"> 
               Continúa con Facebook
             </Button>
           </div>
           <div className="container-icon">
             <img src={GoogleIcon} height="25" className="login-icon" />
-            <Button
-              variant="light"
-              className="text-center mb-3 modalWidth bg-white">
+            <Button variant="light" className="text-center mb-3 modalWidth bg-white"> 
               Continúa con Google
             </Button>
           </div>
           <p>o continúa con</p>
-          <Form.Control
-            type="email"
-            placeholder="Correo electrónico"
-            className="mb-3 modalWidth"
-          />
-          <Form.Control
-            type="password"
-            placeholder="Contraseña"
-            className="mb-3 modalWidth"
-          />
+          <Form.Control type="email" placeholder="Correo electrónico" className="mb-3 modalWidth" />
+          <Form.Control type="password" placeholder="Contraseña" className="mb-3 modalWidth" />
           <a href="#" class="mb-3 modalForgot">
             ¿Olvidaste tu contraseña?
           </a>
           <div className="text-center mb-3">
-            <Button
-              variant="primary"
-              className="text-center w-50 modalButton"
-              onClick={() => (window.location.href = "/Home")}>
+            <Button variant="primary" className="text-center w-50 modalButton" onClick={() => (window.location.href = "/Home")}>
               Iniciar sesión
             </Button>
           </div>

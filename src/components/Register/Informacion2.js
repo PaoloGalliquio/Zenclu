@@ -32,25 +32,13 @@ const Informacion2 = (props) => {
           </div>
           <div className="row text-start">
             <h5>Queremos mostrarte justo lo que buscas</h5>
-            <p>
-              Selecciona o busca distintas categorías que te gustaría poder
-              encontrar en la plataforma
-            </p>
+            <p>Selecciona o busca distintas categorías que te gustaría poder encontrar en la plataforma</p>
           </div>
           <div className="row">
             <div className="col-md-2 my-auto">Busca aquí:</div>
             <div className="col-md-8 pt-2 container-icon">
-              <img
-                src={DropdownIcon}
-                className="dropdown-icon"
-                alt="Seleccionar"
-              />
-              <Form.Control
-                type="text"
-                placeholder=""
-                className="mb-3 modalWidth w-100 bg-white"
-                readOnly
-              />
+              <img src={DropdownIcon} className="dropdown-icon" alt="Seleccionar" />
+              <select type="text" name="Categorías" className="mb-3 modalWidth w-100 bg-white"></select>
             </div>
             <div className="col-md-2 my-auto">
               <Button
