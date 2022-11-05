@@ -54,6 +54,14 @@ input:focus {
   outline: none;
 }
 
+textarea {
+  border: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
 .greencolor{
   color: #4D4D4D;
   background-color: #9FDCA8;
