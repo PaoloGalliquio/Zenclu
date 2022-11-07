@@ -264,6 +264,8 @@
   color: white;
   border-radius: 8px;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .addVideo-continue{

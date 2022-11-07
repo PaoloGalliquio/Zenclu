@@ -1,6 +1,5 @@
 import "./AddVideo.css";
 import { useState } from "react";
-import { useEffect } from "react";
 import Form from 'react-bootstrap/Form';
 
 import uploadIcon from "../../assets/Iconos/Modals/Recurso14.svg";
@@ -36,6 +35,10 @@ const AddVideo = (props) => {
     price: "Gratuito",
     Visibility: "Oculto"
   });
+
+  const removeTag = (removed) => {
+    setEtiquetas(prev => prev.filter(tag => tag !== removed));
+  }
 
   const pantalla = () => {
     if(selected === 0)
@@ -279,7 +282,7 @@ const AddVideo = (props) => {
           return (
             <span key={index} className="addVideo-tag">
               {etiqueta}{" "}
-              <span onClick={() => {etiquetas.splice(index,1);}} className="zencluPointer">x</span>
+              <span onClick={() => {removeTag(etiqueta)}} className="zencluPointer">x</span>
             </span>
           );
         })}
@@ -483,9 +486,8 @@ const AddVideo = (props) => {
           </div>
         </div>
       </div>
-      <div className="col-md-4"></div>
-      <div className="col-md-8 mt-4 text-center">
-        <div className="addVideo-publicButton" onClick={() => {setSelected(6)}}>Publicar</div>
+      <div className="col-md-12 mt-4 text-center">
+        <div className="addVideo-publicButton mx-auto" onClick={() => {setSelected(6)}}>Publicar</div>
       </div>
     </div>
   );
@@ -501,38 +503,36 @@ const AddVideo = (props) => {
         <div>¿Te gustaría detener el proceso?</div>
         <div>Selecciona una de las opciones a continuación.</div>
       </div>
-      <div className="col-md-4"></div>
-      <div className="col-md-4 zencluMedium mt-5 addVideo-closeButton addVideo-continue"
-        onClick={() => {
-          if(prevSelected === null) setSelected(5)
-          else{
-            setSelected(prevSelected);
-            setPrevSelected(null);
-          }
-        }}>
-        Continuar publicando
+      <div className="col-md-12 zencluMedium mt-5 ">
+        <div className="addVideo-closeButton addVideo-continue"
+          onClick={() => {
+            if(prevSelected === null) setSelected(5)
+            else{
+              setSelected(prevSelected);
+              setPrevSelected(null);
+            }
+          }}>
+          Continuar publicando
+        </div>
       </div>
-      <div className="col-md-4"></div>
-      <div className="col-md-4 zencluMedium mt-3 addVideo-closeButton addVideo-save" onClick={() => {props.close(0)}}>
-        Guardar y cerrar
+      <div className="col-md-12 zencluMedium mt-3">
+        <div className="addVideo-closeButton addVideo-save" 
+          onClick={() => {props.close(0)}}>
+          Guardar y cerrar
+        </div>
       </div>
-      <div className="col-md-4"></div>
-      <div className="col-md-12 zencluMedium mt-5 addVideo-closeButton addVideo-exit" onClick={() => {props.close(0)}}>
-        Salir
+      <div className="col-md-12 zencluMedium mt-5">
+        <div className="addVideo-closeButton addVideo-exit" 
+          onClick={() => {props.close(0)}}>
+          Salir
+        </div>
       </div>
     </div>
   );
 
-  useEffect(() => {
-    if(selected == 0){
-      setTimeout(() => {setUploadProgress("50%")}, 5000);
-      setTimeout(() => {setSelected(1);}, 7000);
-    }
-  }, [file]);
-
   return(
     <div className="modal-background text-black fadeIn fast">
-      <div className="modal-container addVideo-container">
+      <div className="modal-container">
         {pantalla()}
       </div>
     </div>
