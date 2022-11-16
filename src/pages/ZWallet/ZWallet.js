@@ -25,7 +25,9 @@ const Zwalet = () => {
     <>
       <NavbarZ />
       <HeaderTitle image={ZWalletIcon} title="ZWallet" />
-      <TabSelector tabs={tabs} haveImage={true} padding={"30%"}  selected={1}/>
+      <div style={{paddingLeft: "15%", paddingRight: "15%"}}>
+        <TabSelector tabs={tabs} haveImage={true} padding={"30%"} selected={1}/>
+      </div>
       <div className="row w-100 text-center">
         <h5 className="mt-3 wallet-total zencluBold">Total actual</h5>
         <h1 className="zencluBold">2,763</h1>

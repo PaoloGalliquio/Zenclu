@@ -1,0 +1,74 @@
+.makePurchase-close{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.makePurchase-title{
+  font-size: 22px;
+}
+
+.makePurchase-button{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #9FDCA8;
+  width: 250px;
+  padding: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.makePurchase-buttonLarge{
+  width: 330px;
+}
+
+.makePurchase-subtext{
+  font-size: 14px;
+}
+
+.makePurchase-publicButton{
+  padding-top: 5px;
+  height: 35px;
+  width: 240px;
+  color: white;
+  border-radius: 8px;
+  background-color: #0086FA;
+  cursor: pointer;
+}
+
+.makePurchase-card{
+  background-color: white;
+  width: 290px;
+  border-radius: 12px;
+  padding: 10px !important;
+  margin-top: 30px;
+}
+
+.makePurchase-cardImage{
+  width: 270px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.makePurchase-Play{
+  background-color: #ED1C24;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.makePurchase-cardInfo{
+  padding-left: 20px;
+}
+
+.makePurchase-cardTitle{
+  font-size: 17px;
+}
+
+.makePurchase-cardCreator{
+  font-size: 13.3px;
+  color: #4D4D4D;
+}

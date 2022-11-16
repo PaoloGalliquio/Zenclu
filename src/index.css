@@ -44,7 +44,7 @@ a, a:visited, a:hover{
 }
 
 .zencluLink{
-  color: #1893ff;
+  color: #1893ff !important;
   cursor: pointer;
   font-weight: 500;
 }

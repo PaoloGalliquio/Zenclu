@@ -1,0 +1,105 @@
+.addProduct-title{
+  font-size: 22px;
+}
+
+.addProduct-subTitle{
+  font-size: 16px;
+}
+
+.addProduct-price{
+  font-size: 20px;
+  background-color: #D5D5D5;
+  width: 126px;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.addProduct-creator{
+  font-size: 17px;
+}
+
+.addProduct-publishEdit{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 8px;
+}
+
+.addProduct-close{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.addProduct-uploadMiniature{
+  width: 128px;
+  height: 128px;
+  padding-top: 30px;
+  border-radius: 6px;
+  background-color: #CCCCCC;
+}
+
+.addProduct-input{
+  width: 100%;
+  height: 32px;
+  border-radius: 8px;
+  padding-left: 10px;
+}
+
+.addProduct-inputMoney{
+  width: 100%;
+  height: 32px;
+  border-radius: 8px;
+  padding-left: 30px;
+}
+
+.addProduct-largeInput{
+  width: 100%;
+  height: 122px;
+  border-radius: 8px;
+  padding-left: 10px;
+  border: none;
+}
+
+.addProduct-principalImage{
+  width: 270px;
+  height: 270px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.addProduct-miniatureImage{
+  width: 62px;
+  height: 62px;
+  margin-right: 7px;
+  margin-top: 7px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.addProduct-end{
+  margin-right: 0px !important;
+}
+
+.addProduct-arrow{
+  margin-top: 150px;
+  position: absolute;
+}
+
+.arrow-Left{
+  left: 0;
+  margin-left: -7px;
+}
+
+.arrow-Right{
+  transform: rotate(180deg);
+  margin-right: -7px;
+  right: 0;
+}
+
+.addProduct-money{
+  position: absolute;
+  left: 0;
+  margin-left: 10px;
+  margin-top: 3px;
+}

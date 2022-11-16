@@ -13,6 +13,7 @@ import Profile from "./pages/Profile/Profile";
 import PaymentMethods from "./pages/PaymentMethods/PaymentMethods";
 import CreatorProfile from "./pages/CreatorProfile/CreatorProfile";
 import VideoCourse from "./pages/VideoCourse/VideoCourse";
+import Product from "./pages/Product/Product";
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
           <Route path="CreatorProfile" element={<CreatorProfile />} />
           <Route path="PaymentMethods" element={<PaymentMethods />} />
           <Route path="VideoCourse" element={<VideoCourse />} />
+          <Route path="Product" element={<Product />} />
         </Routes>
       </BrowserRouter>
     </div>

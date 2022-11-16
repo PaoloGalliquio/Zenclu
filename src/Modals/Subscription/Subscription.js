@@ -1,5 +1,7 @@
 import "./Subscription.css";
+import { useState } from "react";
 import TabSelector from "../../components/Shared/TabSelector/TabSelector";
+import MakePurchase from "../MakePurchase/MakePurchase";
 
 import principalImage from '../../assets/fotos/BirdPhoto.png';
 import viewsIcon from "../../assets/Iconos/Recurso 52.png";
@@ -12,6 +14,7 @@ import saveIcon from "../../assets/Iconos/Modals/Recurso1.svg";
 import playButton from "../../assets/Iconos/Modals/Recurso16.svg";
 
 const Subscription = (props) => {
+  const [modalPurchase, setModalPurchase] = useState(false);
   const tabs = [
     {
       id: 1,
@@ -24,6 +27,8 @@ const Subscription = (props) => {
   ];
   
   return(
+    <>
+    {modalPurchase ? <MakePurchase close={setModalPurchase}/> : 
     <div className="modal-background" onClick={() => {props.showModal(false)}}>
       <div className="subscriptionModal-container fadeIn fast" onClick={(e) => {e.stopPropagation()}}>
         <div className="row">
@@ -37,7 +42,9 @@ const Subscription = (props) => {
             <div className="videoCourse-timer">10:58</div>
           </div>
           <div className="col-md-9">
-            <div className="subscriptionModal-title zencluMedium">Become an amazing plyboard builder</div>
+            <a href="/VideoCourse">
+              <div className="subscriptionModal-title zencluMedium">Become an amazing plyboard builder</div>
+            </a>
             <div className="subscriptionModal-subtitle">Wood creations</div>
           </div>
           <div className="col-md-3 text-end subscriptionModal-subtitle">
@@ -62,13 +69,12 @@ const Subscription = (props) => {
             <img src={LinkedIn} alt="LinkedIn" width={"23px"} />
           </div>
           <div className="col-md-12 text-center mt-3">
-            <a href="/VideoCourse">
-              <button className="videoCourse-button">Inscribete</button>
-            </a>
+            <button className="videoCourse-button" onClick={() => {setModalPurchase(true)}}>Inscribete</button>
           </div>
         </div>
       </div>
-    </div>
+    </div>}
+    </>
   );
 }
 
