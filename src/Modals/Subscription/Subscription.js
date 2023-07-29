@@ -28,7 +28,7 @@ const Subscription = (props) => {
   
   return(
     <>
-    {modalPurchase ? <MakePurchase close={setModalPurchase}/> : 
+    {modalPurchase ? <MakePurchase close={props.showModal}/> : 
     <div className="modal-background" onClick={() => {props.showModal(false)}}>
       <div className="subscriptionModal-container fadeIn fast" onClick={(e) => {e.stopPropagation()}}>
         <div className="row">
